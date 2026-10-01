@@ -4,30 +4,31 @@ import "./globals.css";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#000000",
+  themeColor: "#ffffff",
 };
 
 export const metadata: Metadata = {
-  title: "KARVO // Venture Studio · Mexico · Latin America",
+  title: "KARVO // Construimos las empresas del futuro",
   description:
-    "Karvo partners with exceptional people to build technology companies that solve meaningful problems. Born in Tijuana. Built for the world.",
+    "Karvo es un venture studio que utiliza inteligencia artificial, tecnología, capital y talento para descubrir oportunidades y construir compañías de alto potencial en Latinoamérica.",
   keywords: [
     "Karvo",
     "Venture Studio",
     "Mexico",
     "Latin America",
     "Tijuana",
+    "Inteligencia Artificial",
     "Technology Companies",
     "Startups",
     "AI",
-    "Financial Infrastructure",
+    "Arkha",
   ],
   openGraph: {
-    title: "KARVO // Building the next generation of companies",
+    title: "KARVO // Construimos las empresas del futuro",
     description:
-      "Karvo partners with exceptional people to build technology companies that solve meaningful problems.",
+      "Karvo es un venture studio que descubre oportunidades, construye tecnología y crea compañías diseñadas para los mercados de la próxima generación.",
     siteName: "KARVO",
-    locale: "en_US",
+    locale: "es_MX",
     type: "website",
   },
 };
@@ -38,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="es" className="scroll-smooth bg-white">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -47,19 +48,11 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@100..900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Geist:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body className="bg-surface font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary min-h-screen flex flex-col justify-between">
+      <body className="bg-white text-neutral-900 antialiased min-h-screen selection:bg-neutral-900 selection:text-white">
         {children}
       </body>
     </html>
