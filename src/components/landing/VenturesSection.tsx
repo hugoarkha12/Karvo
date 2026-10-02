@@ -21,7 +21,7 @@ export default function VenturesSection({
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-14">
           <div>
-            <h2 className="text-3xl sm:text-5xl md:text-6xl font-normal tracking-[-0.035em] text-neutral-950 font-display leading-[1.1]">
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold tracking-[-0.038em] text-neutral-950 font-display leading-[1.1]">
               {t.ventures.headline}
             </h2>
           </div>
@@ -81,7 +81,7 @@ export default function VenturesSection({
               </span>
               <button
                 onClick={onOpenArkhaModal}
-                className="inline-flex items-center gap-2 rounded-full bg-[#0052FF] px-6 py-2.5 text-xs font-semibold text-white hover:bg-[#0043d6] shadow-[0_4px_20px_rgba(0,82,255,0.35)] transition-all font-sans cursor-pointer"
+                className="btn-wipe btn-wipe--blue inline-flex items-center gap-2 bg-[#0052FF] px-6 py-2.5 text-xs font-semibold text-white shadow-[0_4px_20px_rgba(0,82,255,0.35)] transition-all font-sans cursor-pointer"
               >
                 {t.ventures.arkha.cta}
               </button>

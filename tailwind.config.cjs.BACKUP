@@ -58,9 +58,9 @@ module.exports = {
         "on-background": "#191c1e",
       },
       borderRadius: {
-        DEFAULT: "0",
-        lg: "0",
-        xl: "0",
+        DEFAULT: "0.125rem",
+        lg: "0.25rem",
+        xl: "0.5rem",
       },
       spacing: {
         "space-xs": "0.25rem",
@@ -74,20 +74,20 @@ module.exports = {
         "margin-mobile": "1.25rem",
       },
       fontFamily: {
-        display: ["Inter", "'Helvetica Neue'", "Helvetica", "Arial", "sans-serif"],
-        sans: ["Inter", "'Helvetica Neue'", "Helvetica", "Arial", "sans-serif"],
-        headline: ["Inter", "'Helvetica Neue'", "Helvetica", "Arial", "sans-serif"],
-        "headline-2xl": ["Inter", "'Helvetica Neue'", "Helvetica", "Arial", "sans-serif"],
-        "headline-xl": ["Inter", "'Helvetica Neue'", "Helvetica", "Arial", "sans-serif"],
-        "headline-lg": ["Inter", "'Helvetica Neue'", "Helvetica", "Arial", "sans-serif"],
-        "headline-md": ["Inter", "'Helvetica Neue'", "Helvetica", "Arial", "sans-serif"],
-        "headline-sm": ["Inter", "'Helvetica Neue'", "Helvetica", "Arial", "sans-serif"],
-        "body-lg": ["Inter", "'Helvetica Neue'", "Helvetica", "Arial", "sans-serif"],
-        "body-md": ["Inter", "'Helvetica Neue'", "Helvetica", "Arial", "sans-serif"],
-        "body-sm": ["Inter", "'Helvetica Neue'", "Helvetica", "Arial", "sans-serif"],
-        "label-md": ["Inter", "'Helvetica Neue'", "Helvetica", "Arial", "sans-serif"],
-        "label-sm": ["Inter", "'Helvetica Neue'", "Helvetica", "Arial", "sans-serif"],
-        mono: ["Inter", "'Helvetica Neue'", "Helvetica", "Arial", "sans-serif"],
+        display: ["'Plus Jakarta Sans'", "'Inter'", "'Geist'", "sans-serif"],
+        sans: ["'Plus Jakarta Sans'", "'Inter'", "'Geist'", "sans-serif"],
+        headline: ["'Plus Jakarta Sans'", "'Inter'", "'Geist'", "sans-serif"],
+        "headline-2xl": ["'Plus Jakarta Sans'", "'Inter'", "'Geist'", "sans-serif"],
+        "headline-xl": ["'Plus Jakarta Sans'", "'Inter'", "'Geist'", "sans-serif"],
+        "headline-lg": ["'Plus Jakarta Sans'", "'Inter'", "'Geist'", "sans-serif"],
+        "headline-md": ["'Plus Jakarta Sans'", "'Inter'", "'Geist'", "sans-serif"],
+        "headline-sm": ["'Plus Jakarta Sans'", "'Inter'", "'Geist'", "sans-serif"],
+        "body-lg": ["'Plus Jakarta Sans'", "'Inter'", "'Geist'", "sans-serif"],
+        "body-md": ["'Plus Jakarta Sans'", "'Inter'", "'Geist'", "sans-serif"],
+        "body-sm": ["'Plus Jakarta Sans'", "'Inter'", "'Geist'", "sans-serif"],
+        "label-md": ["'JetBrains Mono'", "monospace"],
+        "label-sm": ["'JetBrains Mono'", "monospace"],
+        mono: ["'JetBrains Mono'", "monospace"],
       },
       keyframes: {
         fadeSlideIn: {
@@ -98,22 +98,6 @@ module.exports = {
           from: { backgroundPosition: "50% 50%, 50% 50%" },
           to: { backgroundPosition: "350% 50%, 350% 50%" },
         },
-        wipeLeft: {
-          from: { clipPath: "inset(0 100% 0 0)" },
-          to: { clipPath: "inset(0 0 0 0)" },
-        },
-        wipeRight: {
-          from: { clipPath: "inset(0 0 0 100%)" },
-          to: { clipPath: "inset(0 0 0 0)" },
-        },
-        typeRise: {
-          from: { transform: "translate3d(0, 118%, 0)" },
-          to: { transform: "translate3d(0, 0, 0)" },
-        },
-        linkIn: {
-          from: { opacity: "0", transform: "translate3d(-16px, 0, 0)" },
-          to: { opacity: "1", transform: "translate3d(0, 0, 0)" },
-        },
       },
       animation: {
         "fade-slide-in-1": "fadeSlideIn 0.6s ease-out forwards",
@@ -121,10 +105,6 @@ module.exports = {
         "fade-slide-in-3": "fadeSlideIn 1s ease-out forwards",
         "fade-slide-in-4": "fadeSlideIn 1.2s ease-out forwards",
         aurora: "aurora 60s linear infinite",
-        "wipe-left": "wipeLeft 0.7s cubic-bezier(0.16, 1, 0.3, 1) backwards",
-        "wipe-right": "wipeRight 0.65s cubic-bezier(0.16, 1, 0.3, 1) backwards",
-        "type-rise": "typeRise 0.85s cubic-bezier(0.16, 1, 0.3, 1) backwards",
-        "link-in": "linkIn 0.55s cubic-bezier(0.16, 1, 0.3, 1) backwards",
       },
       fontSize: {
         "label-md": [

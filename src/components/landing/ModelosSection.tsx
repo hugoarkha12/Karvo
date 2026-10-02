@@ -20,10 +20,10 @@ export default function ModelosSection({
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 border border-neutral-200 text-[10px] font-mono tracking-widest uppercase text-neutral-700 mb-4 shadow-sm">
+          <div className="glass-badge mb-4">
             {t.models.tag}
           </div>
-          <h2 className="text-3xl sm:text-5xl md:text-6xl font-normal tracking-[-0.035em] text-neutral-950 font-display leading-[1.1]">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold tracking-[-0.038em] text-neutral-950 font-display leading-[1.1]">
             {t.models.headline}
           </h2>
           <p className="text-sm sm:text-base text-neutral-600 mt-4 font-sans leading-relaxed">
@@ -64,7 +64,7 @@ export default function ModelosSection({
             <div className="mt-10 pt-6 border-t border-neutral-200">
               <a
                 href="#como-construimos"
-                className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-white hover:bg-neutral-100 border border-neutral-300 px-6 py-3.5 text-xs font-semibold text-neutral-900 shadow-sm transition-all font-sans"
+                className="btn-wipe btn-wipe--light w-full inline-flex items-center justify-center gap-2 bg-white border border-neutral-300 px-6 py-3.5 text-xs font-semibold text-neutral-900 shadow-sm transition-all font-sans"
               >
                 {t.models.studio.cta}
               </a>
@@ -102,7 +102,7 @@ export default function ModelosSection({
             <div className="mt-10 pt-6 border-t border-white/15">
               <button
                 onClick={onOpenFounderModal}
-                className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-white hover:bg-neutral-100 px-6 py-3.5 text-xs font-semibold text-neutral-950 shadow-md transition-all font-sans cursor-pointer"
+                className="btn-wipe btn-wipe--light w-full inline-flex items-center justify-center gap-2 bg-white px-6 py-3.5 text-xs font-semibold text-neutral-950 shadow-md transition-all font-sans cursor-pointer"
               >
                 {t.models.ventures.cta}
               </button>

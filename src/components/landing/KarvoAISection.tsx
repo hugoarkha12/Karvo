@@ -20,7 +20,7 @@ export default function KarvoAISection({
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="max-w-4xl">
-          <h2 className="text-3xl sm:text-5xl md:text-6xl font-normal tracking-[-0.035em] text-neutral-950 font-display leading-[1.1]">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold tracking-[-0.038em] text-neutral-950 font-display leading-[1.1]">
             {t.karvoAi.headline}
           </h2>
           <div className="mt-6 space-y-4 text-base sm:text-lg text-neutral-600 font-sans leading-relaxed">
@@ -82,7 +82,7 @@ export default function KarvoAISection({
             </div>
             <button
               onClick={onOpenDiagnosticModal}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-[#0052FF] px-7 py-3 text-xs font-semibold text-white hover:bg-[#0043d6] shadow-[0_4px_20px_rgba(0,82,255,0.35)] transition-all font-sans cursor-pointer whitespace-nowrap"
+              className="btn-wipe btn-wipe--blue w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#0052FF] px-7 py-3 text-xs font-semibold text-white shadow-[0_4px_20px_rgba(0,82,255,0.35)] transition-all font-sans cursor-pointer whitespace-nowrap"
             >
               {t.karvoAi.cta}
             </button>

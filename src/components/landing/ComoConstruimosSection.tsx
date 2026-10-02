@@ -20,7 +20,7 @@ export default function ComoConstruimosSection({ t }: ComoConstruimosProps) {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-14">
           <div>
-            <h2 className="text-3xl sm:text-5xl md:text-6xl font-normal tracking-[-0.035em] text-neutral-950 font-display max-w-2xl leading-[1.1]">
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold tracking-[-0.038em] text-neutral-950 font-display max-w-2xl leading-[1.1]">
               {t.methodology.headline}
             </h2>
           </div>

@@ -16,7 +16,7 @@ export default function TijuanaSection({ t }: TijuanaSectionProps) {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="max-w-4xl">
-          <h2 className="text-3xl sm:text-5xl md:text-6xl font-normal tracking-[-0.035em] text-neutral-950 font-display leading-[1.1]">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold tracking-[-0.038em] text-neutral-950 font-display leading-[1.1]">
             {t.tijuana.headline}
           </h2>
           <div className="mt-6 space-y-3 text-base sm:text-lg text-neutral-600 font-sans leading-relaxed">

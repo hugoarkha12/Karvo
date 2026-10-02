@@ -19,10 +19,10 @@ export default function IASection({ t }: IASectionProps) {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-neutral-200 text-[10px] font-mono tracking-widest uppercase text-neutral-700 mb-4 shadow-sm">
+          <div className="glass-badge mb-4">
             {t.ia.tag}
           </div>
-          <h2 className="text-3xl sm:text-5xl md:text-6xl font-normal tracking-[-0.035em] text-neutral-950 font-display leading-[1.1]">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold tracking-[-0.038em] text-neutral-950 font-display leading-[1.1]">
             {t.ia.headline}
           </h2>
           <p className="text-base sm:text-lg text-neutral-600 mt-6 font-sans leading-relaxed whitespace-pre-line">

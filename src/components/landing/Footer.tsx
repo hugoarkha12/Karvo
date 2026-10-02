@@ -44,7 +44,7 @@ export default function Footer({
                     <li key={lIdx}>
                       <a
                         href={link.href}
-                        className="text-xs text-neutral-600 hover:text-neutral-950 transition-colors font-sans"
+                        className="text-xs text-neutral-600 hover:text-[#0052FF] transition-colors font-sans"
                       >
                         {link.label}
                       </a>
@@ -59,30 +59,30 @@ export default function Footer({
         {/* Footer Specific Direct Links */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-neutral-500">
           <div className="flex flex-wrap gap-4 items-center">
-            <a href="#modelos" className="hover:text-neutral-950 transition-colors">
+            <a href="#modelos" className="hover:text-[#0052FF] transition-colors">
               Studio
             </a>
-            <a href="#ventures" className="hover:text-neutral-950 transition-colors">
+            <a href="#ventures" className="hover:text-[#0052FF] transition-colors">
               Ventures
             </a>
-            <a href="#karvo-ai" className="hover:text-neutral-950 transition-colors">
+            <a href="#karvo-ai" className="hover:text-[#0052FF] transition-colors">
               Karvo AI
             </a>
             <button
               onClick={onOpenArkhaModal}
-              className="hover:text-neutral-950 transition-colors cursor-pointer"
+              className="hover:text-[#0052FF] transition-colors cursor-pointer"
             >
               Arkha
             </button>
-            <a href="#network" className="hover:text-neutral-950 transition-colors">
+            <a href="#network" className="hover:text-[#0052FF] transition-colors">
               Network
             </a>
-            <a href="#tesis" className="hover:text-neutral-950 transition-colors">
+            <a href="#tesis" className="hover:text-[#0052FF] transition-colors">
               Nosotros
             </a>
             <button
               onClick={onOpenFounderModal}
-              className="hover:text-neutral-950 transition-colors cursor-pointer font-semibold text-neutral-800"
+              className="hover:text-[#0052FF] transition-colors cursor-pointer font-semibold text-neutral-800"
             >
               Aplicar
             </button>

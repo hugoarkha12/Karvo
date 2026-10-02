@@ -21,11 +21,11 @@ export default function EmpresasSection({
       <div className="max-w-6xl mx-auto">
         <div className="p-8 sm:p-12 rounded-3xl bg-white border border-[#0052FF]/25 shadow-[0_20px_60px_rgba(0,82,255,0.10)]">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 border border-neutral-200 text-[10px] font-mono tracking-widest uppercase text-neutral-700 mb-4 shadow-xs">
+            <div className="glass-badge mb-4">
               {t.companies.tag}
             </div>
 
-            <h2 className="text-3xl sm:text-5xl md:text-6xl font-normal tracking-[-0.035em] text-neutral-950 font-display leading-[1.1]">
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold tracking-[-0.038em] text-neutral-950 font-display leading-[1.1]">
               {t.companies.headline}
             </h2>
 
@@ -47,7 +47,7 @@ export default function EmpresasSection({
             <div className="mt-8">
               <button
                 onClick={onOpenDiagnosticModal}
-                className="inline-flex items-center gap-2 rounded-full bg-[#0052FF] px-8 py-3.5 text-xs sm:text-sm font-semibold text-white hover:bg-[#0043d6] shadow-[0_4px_20px_rgba(0,82,255,0.35)] transition-all font-sans cursor-pointer"
+                className="btn-wipe btn-wipe--blue inline-flex items-center gap-2 bg-[#0052FF] px-8 py-3.5 text-xs sm:text-sm font-semibold text-white shadow-[0_4px_20px_rgba(0,82,255,0.35)] transition-all font-sans cursor-pointer"
               >
                 {t.companies.cta}
               </button>

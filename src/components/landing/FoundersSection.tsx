@@ -19,7 +19,7 @@ export default function FoundersSection({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Left Column: Thesis & Invitation */}
           <div className="lg:col-span-6">
-            <h2 className="text-3xl sm:text-5xl md:text-6xl font-normal tracking-[-0.035em] text-neutral-950 font-display leading-[1.1]">
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold tracking-[-0.038em] text-neutral-950 font-display leading-[1.1]">
               {t.founders.headline}
             </h2>
 
@@ -45,7 +45,7 @@ export default function FoundersSection({
             <div className="mt-10">
               <button
                 onClick={onOpenFounderModal}
-                className="inline-flex items-center gap-2 rounded-full bg-[#0052FF] px-8 py-4 text-xs sm:text-sm font-semibold text-white hover:bg-[#0043d6] shadow-[0_4px_20px_rgba(0,82,255,0.35)] transition-all font-sans cursor-pointer"
+                className="btn-wipe btn-wipe--blue inline-flex items-center gap-2 bg-[#0052FF] px-8 py-4 text-xs sm:text-sm font-semibold text-white shadow-[0_4px_20px_rgba(0,82,255,0.35)] transition-all font-sans cursor-pointer"
               >
                 {t.founders.cta}
               </button>
@@ -100,7 +100,7 @@ export default function FoundersSection({
 
             <button
               onClick={onOpenFounderModal}
-              className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#0052FF] hover:bg-[#0043d6] py-3.5 px-6 text-xs font-semibold text-white font-sans shadow-[0_4px_20px_rgba(0,82,255,0.35)] transition-all cursor-pointer"
+              className="btn-wipe btn-wipe--blue w-full inline-flex items-center justify-center gap-2 bg-[#0052FF] py-3.5 px-6 text-xs font-semibold text-white font-sans shadow-[0_4px_20px_rgba(0,82,255,0.35)] transition-all cursor-pointer"
             >
               Completar Formulario de Aplicación (16 Campos) →
             </button>
