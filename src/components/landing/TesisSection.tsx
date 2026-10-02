@@ -69,7 +69,7 @@ export default function TesisSection({ t }: TesisSectionProps) {
             <span className="text-[10px] font-mono tracking-widest text-neutral-500 uppercase block mb-3 font-semibold">
               {t.thesis.equationTitle}
             </span>
-            <div className="p-4 sm:p-5 rounded-2xl bg-neutral-950 text-white shadow-lg">
+            <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-[#0052FF] to-[#0033aa] text-white shadow-[0_8px_30px_rgba(0,82,255,0.35)]">
               <span className="text-base sm:text-lg md:text-xl font-mono font-bold tracking-wide block">
                 {t.thesis.equationFormula}
               </span>

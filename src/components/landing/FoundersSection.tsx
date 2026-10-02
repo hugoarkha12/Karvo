@@ -19,10 +19,6 @@ export default function FoundersSection({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Left Column: Thesis & Invitation */}
           <div className="lg:col-span-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 border border-neutral-200 text-[10px] font-mono tracking-widest uppercase text-neutral-700 mb-4 shadow-sm">
-              {t.founders.tag}
-            </div>
-
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-normal tracking-[-0.035em] text-neutral-950 font-display leading-[1.1]">
               {t.founders.headline}
             </h2>
@@ -33,15 +29,15 @@ export default function FoundersSection({
 
             <div className="mt-8 space-y-3">
               <div className="flex items-center gap-3 text-xs font-mono text-neutral-700">
-                <span className="w-1.5 h-1.5 rounded-full bg-neutral-900" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#0052FF]" />
                 <span>INYECCIÓN DE CAPACIDAD TÉCNICA E IA</span>
               </div>
               <div className="flex items-center gap-3 text-xs font-mono text-neutral-700">
-                <span className="w-1.5 h-1.5 rounded-full bg-neutral-900" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#0052FF]" />
                 <span>CAPITAL INICIAL Y ACOMPAÑAMIENTO OPERATIVO</span>
               </div>
               <div className="flex items-center gap-3 text-xs font-mono text-neutral-700">
-                <span className="w-1.5 h-1.5 rounded-full bg-neutral-900" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#0052FF]" />
                 <span>RED DE DISTRIBUCIÓN BINACIONAL Y GLOBAL</span>
               </div>
             </div>
@@ -49,7 +45,7 @@ export default function FoundersSection({
             <div className="mt-10">
               <button
                 onClick={onOpenFounderModal}
-                className="inline-flex items-center gap-2 rounded-full bg-neutral-950 px-8 py-4 text-xs sm:text-sm font-semibold text-white hover:bg-neutral-800 shadow-md transition-all font-sans cursor-pointer"
+                className="inline-flex items-center gap-2 rounded-full bg-[#0052FF] px-8 py-4 text-xs sm:text-sm font-semibold text-white hover:bg-[#0043d6] shadow-[0_4px_20px_rgba(0,82,255,0.35)] transition-all font-sans cursor-pointer"
               >
                 {t.founders.cta}
               </button>
@@ -58,7 +54,7 @@ export default function FoundersSection({
 
           {/* Right Column: Interactive Quick-Start & 16-Field Intake Trigger */}
           <div className="lg:col-span-6 p-6 sm:p-8 rounded-3xl bg-neutral-50/80 border border-neutral-200/90 shadow-lg relative overflow-hidden">
-            <div className="h-1 w-full bg-gradient-to-r from-neutral-300 via-neutral-900 to-neutral-300 absolute top-0 left-0 right-0" />
+            <div className="h-1 w-full bg-gradient-to-r from-[#0052FF]/20 via-[#0052FF] to-[#0052FF]/20 absolute top-0 left-0 right-0" />
 
             <div className="mb-6">
               <div className="flex items-center justify-between">
@@ -104,7 +100,7 @@ export default function FoundersSection({
 
             <button
               onClick={onOpenFounderModal}
-              className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-neutral-950 hover:bg-neutral-800 py-3.5 px-6 text-xs font-semibold text-white font-sans shadow-md transition-all cursor-pointer"
+              className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#0052FF] hover:bg-[#0043d6] py-3.5 px-6 text-xs font-semibold text-white font-sans shadow-[0_4px_20px_rgba(0,82,255,0.35)] transition-all cursor-pointer"
             >
               Completar Formulario de Aplicación (16 Campos) →
             </button>

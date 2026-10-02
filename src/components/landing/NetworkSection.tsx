@@ -41,7 +41,7 @@ export default function NetworkSection({ t }: NetworkSectionProps) {
                   onMouseLeave={() => setActiveNode(null)}
                   className={`p-5 sm:p-6 rounded-2xl transition-all duration-300 border flex flex-col justify-between cursor-pointer h-full ${
                     isActive
-                      ? "bg-white border-neutral-950 shadow-xl -translate-y-1 ring-1 ring-neutral-950/10"
+                      ? "bg-white border-[#0052FF]/60 shadow-xl shadow-[#0052FF]/10 -translate-y-1 ring-1 ring-[#0052FF]/20"
                       : "bg-white border-neutral-200/90 hover:border-neutral-300 shadow-sm"
                   }`}
                 >
@@ -50,7 +50,7 @@ export default function NetworkSection({ t }: NetworkSectionProps) {
                       <span className="text-[10px] font-mono text-neutral-400 font-bold">
                         NODE 0{idx + 1}
                       </span>
-                      <span className="w-1.5 h-1.5 rounded-full bg-neutral-950/40" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#0052FF]/60" />
                     </div>
                     <h3 className="text-sm sm:text-base font-bold font-mono tracking-wider text-neutral-950 uppercase mb-2">
                       {node.name}

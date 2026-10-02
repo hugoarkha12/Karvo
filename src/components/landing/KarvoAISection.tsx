@@ -20,9 +20,6 @@ export default function KarvoAISection({
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="max-w-4xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-neutral-200 text-[10px] font-mono tracking-widest uppercase text-neutral-700 mb-4 shadow-sm">
-            {t.karvoAi.tag}
-          </div>
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-normal tracking-[-0.035em] text-neutral-950 font-display leading-[1.1]">
             {t.karvoAi.headline}
           </h2>
@@ -47,7 +44,7 @@ export default function KarvoAISection({
           <div className="grid grid-cols-1 md:grid-cols-5 gap-3 relative">
             {t.karvoAi.flowSteps.map((step, idx) => (
               <div key={idx} className="relative group">
-                <div className="p-5 rounded-2xl bg-neutral-50/80 border border-neutral-200 group-hover:border-neutral-400 group-hover:bg-white group-hover:shadow-md transition-all duration-300 h-full flex flex-col justify-between">
+                <div className="p-5 rounded-2xl bg-neutral-50/80 border border-neutral-200 group-hover:border-[#0052FF]/50 group-hover:bg-white group-hover:shadow-[0_8px_30px_rgba(0,82,255,0.12)] transition-all duration-300 h-full flex flex-col justify-between">
                   <div>
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-xs font-mono font-bold text-neutral-400">
@@ -85,7 +82,7 @@ export default function KarvoAISection({
             </div>
             <button
               onClick={onOpenDiagnosticModal}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-neutral-950 px-7 py-3 text-xs font-semibold text-white hover:bg-neutral-800 shadow-md transition-all font-sans cursor-pointer whitespace-nowrap"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-[#0052FF] px-7 py-3 text-xs font-semibold text-white hover:bg-[#0043d6] shadow-[0_4px_20px_rgba(0,82,255,0.35)] transition-all font-sans cursor-pointer whitespace-nowrap"
             >
               {t.karvoAi.cta}
             </button>

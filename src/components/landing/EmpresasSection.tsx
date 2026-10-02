@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { Check } from "lucide-react";
 import { Translations } from "@/lib/translations";
 
 interface EmpresasSectionProps {
@@ -18,7 +19,7 @@ export default function EmpresasSection({
       className="relative w-full py-20 sm:py-28 px-4 sm:px-6 bg-neutral-50/60 text-neutral-900 border-t border-neutral-200"
     >
       <div className="max-w-6xl mx-auto">
-        <div className="p-8 sm:p-12 rounded-3xl bg-white border border-neutral-200/90 shadow-sm">
+        <div className="p-8 sm:p-12 rounded-3xl bg-white border border-[#0052FF]/25 shadow-[0_20px_60px_rgba(0,82,255,0.10)]">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 border border-neutral-200 text-[10px] font-mono tracking-widest uppercase text-neutral-700 mb-4 shadow-xs">
               {t.companies.tag}
@@ -36,9 +37,9 @@ export default function EmpresasSection({
               {t.companies.pills.map((pill, idx) => (
                 <span
                   key={idx}
-                  className="px-3 py-1 rounded-full bg-neutral-50 border border-neutral-200 text-xs text-neutral-700 font-sans shadow-2xs"
+                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-neutral-50 border border-neutral-200 text-xs text-neutral-700 font-sans shadow-2xs"
                 >
-                  ✓ {pill}
+                  <Check className="w-3 h-3 text-[#0052FF]" strokeWidth={3} /> {pill}
                 </span>
               ))}
             </div>
@@ -46,7 +47,7 @@ export default function EmpresasSection({
             <div className="mt-8">
               <button
                 onClick={onOpenDiagnosticModal}
-                className="inline-flex items-center gap-2 rounded-full bg-neutral-950 px-8 py-3.5 text-xs sm:text-sm font-semibold text-white hover:bg-neutral-800 shadow-md transition-all font-sans cursor-pointer"
+                className="inline-flex items-center gap-2 rounded-full bg-[#0052FF] px-8 py-3.5 text-xs sm:text-sm font-semibold text-white hover:bg-[#0043d6] shadow-[0_4px_20px_rgba(0,82,255,0.35)] transition-all font-sans cursor-pointer"
               >
                 {t.companies.cta}
               </button>

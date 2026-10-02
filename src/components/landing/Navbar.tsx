@@ -39,7 +39,7 @@ export default function Navbar({
             <button
               type="button"
               onClick={() => onLanguageChange("es")}
-              className={`px-2.5 py-0.5 rounded-full transition-all cursor-pointer ${
+              className={`px-2.5 py-0.5 rounded-full transition-all cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0052FF] ${
                 lang === "es"
                   ? "bg-neutral-950 text-white font-bold"
                   : "text-neutral-500 hover:text-neutral-950"
@@ -50,7 +50,7 @@ export default function Navbar({
             <button
               type="button"
               onClick={() => onLanguageChange("en")}
-              className={`px-2.5 py-0.5 rounded-full transition-all cursor-pointer ${
+              className={`px-2.5 py-0.5 rounded-full transition-all cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0052FF] ${
                 lang === "en"
                   ? "bg-neutral-950 text-white font-bold"
                   : "text-neutral-500 hover:text-neutral-950"
@@ -63,7 +63,7 @@ export default function Navbar({
           {/* Quick Apply CTA */}
           <button
             onClick={onOpenFounderModal}
-            className="inline-flex items-center gap-1 rounded-full bg-neutral-950 px-3.5 py-1.5 text-xs font-semibold text-white hover:bg-neutral-800 shadow-sm cursor-pointer transition-all"
+            className="inline-flex items-center gap-1 rounded-full bg-neutral-950 px-3.5 py-1.5 text-xs font-semibold text-white hover:bg-neutral-800 shadow-sm cursor-pointer transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0052FF]"
           >
             <span>{lang === "es" ? "Construir" : "Build"}</span>
             <span>→</span>

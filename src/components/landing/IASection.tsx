@@ -29,7 +29,7 @@ export default function IASection({ t }: IASectionProps) {
             {t.ia.intro}
           </p>
           <div className="mt-4 inline-flex items-center gap-2 text-xs font-mono text-neutral-700 bg-white border border-neutral-200 px-3 py-1.5 rounded-full shadow-sm">
-            <span className="w-1.5 h-1.5 rounded-full bg-neutral-950 animate-pulse" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#0052FF] animate-pulse" />
             {t.ia.realityNote}
           </div>
         </div>
@@ -44,7 +44,7 @@ export default function IASection({ t }: IASectionProps) {
                   onClick={() => setSelectedVector(vec.key)}
                   className={`p-6 rounded-2xl transition-all duration-300 border flex flex-col justify-between cursor-pointer h-full ${
                     isSelected
-                      ? "bg-white border-neutral-950 shadow-xl ring-1 ring-neutral-950/15 -translate-y-1"
+                      ? "bg-white border-[#0052FF]/60 shadow-xl shadow-[#0052FF]/10 ring-1 ring-[#0052FF]/20 -translate-y-1"
                       : "bg-white border-neutral-200/90 hover:border-neutral-300 hover:shadow-md"
                   }`}
                 >

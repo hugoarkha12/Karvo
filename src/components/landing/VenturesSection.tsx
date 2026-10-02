@@ -21,9 +21,6 @@ export default function VenturesSection({
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-14">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 border border-neutral-200 text-[10px] font-mono tracking-widest uppercase text-neutral-700 mb-4 shadow-sm">
-              {t.ventures.tag}
-            </div>
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-normal tracking-[-0.035em] text-neutral-950 font-display leading-[1.1]">
               {t.ventures.headline}
             </h2>
@@ -36,7 +33,7 @@ export default function VenturesSection({
         {/* Ventures Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Real Company 1: ARKHA */}
-          <div className="lg:col-span-2 p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-neutral-50 via-white to-neutral-50 border border-neutral-200/90 hover:border-neutral-300 transition-all duration-300 flex flex-col justify-between shadow-sm hover:shadow-lg">
+          <div className="lg:col-span-2 p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-neutral-50 via-white to-neutral-50 border border-neutral-200/90 hover:border-[#0052FF]/40 transition-all duration-300 flex flex-col justify-between shadow-sm hover:shadow-[0_20px_60px_rgba(0,82,255,0.15)]">
             <div>
               <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
                 <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 border border-neutral-200 text-[10px] font-mono tracking-widest uppercase text-neutral-700 font-semibold">
@@ -84,7 +81,7 @@ export default function VenturesSection({
               </span>
               <button
                 onClick={onOpenArkhaModal}
-                className="inline-flex items-center gap-2 rounded-full bg-neutral-950 px-6 py-2.5 text-xs font-semibold text-white hover:bg-neutral-800 shadow-sm transition-all font-sans cursor-pointer"
+                className="inline-flex items-center gap-2 rounded-full bg-[#0052FF] px-6 py-2.5 text-xs font-semibold text-white hover:bg-[#0043d6] shadow-[0_4px_20px_rgba(0,82,255,0.35)] transition-all font-sans cursor-pointer"
               >
                 {t.ventures.arkha.cta}
               </button>

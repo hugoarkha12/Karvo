@@ -94,12 +94,17 @@ module.exports = {
           from: { opacity: "0", transform: "translateY(20px)" },
           to: { opacity: "1", transform: "translateY(0)" },
         },
+        aurora: {
+          from: { backgroundPosition: "50% 50%, 50% 50%" },
+          to: { backgroundPosition: "350% 50%, 350% 50%" },
+        },
       },
       animation: {
         "fade-slide-in-1": "fadeSlideIn 0.6s ease-out forwards",
         "fade-slide-in-2": "fadeSlideIn 0.8s ease-out forwards",
         "fade-slide-in-3": "fadeSlideIn 1s ease-out forwards",
         "fade-slide-in-4": "fadeSlideIn 1.2s ease-out forwards",
+        aurora: "aurora 60s linear infinite",
       },
       fontSize: {
         "label-md": [

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Translations } from "@/lib/translations";
+import { AuroraLayers } from "@/components/ui/aurora-background";
 
 interface HeroSectionProps {
   t: Translations;
@@ -15,10 +16,8 @@ export default function HeroSection({
   const [activeStep, setActiveStep] = useState<number>(0);
 
   return (
-    <section className="relative w-full isolate min-h-screen overflow-hidden text-neutral-900 flex flex-col justify-between pt-24 pb-12 sm:pt-28 sm:pb-16 px-4 sm:px-6">
-      {/* Background Architectural Canvas with Granite / Ratio Texture */}
-      <div className="pointer-events-none absolute inset-0 bg-[url('/granite-texture.jpg')] bg-repeat bg-[size:450px_450px]" />
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_15%,rgba(255,255,255,0.15)_0%,rgba(255,255,255,0.65)_100%)]" />
+    <section className="relative w-full isolate min-h-[100dvh] overflow-hidden text-neutral-900 flex flex-col justify-between pt-24 pb-12 sm:pt-28 sm:pb-16 px-4 sm:px-6">
+      <AuroraLayers />
 
       {/* Hero Center Content */}
       <div className="relative z-10 max-w-5xl mx-auto w-full text-center flex-1 flex flex-col justify-center my-auto">
@@ -48,7 +47,7 @@ export default function HeroSection({
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-8 sm:mt-10 items-center justify-center animate-fade-slide-in-4">
           <button
             onClick={onOpenFounderModal}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 text-xs sm:text-sm font-semibold text-white bg-neutral-950 hover:bg-neutral-800 rounded-full py-3.5 px-8 font-sans transition-all duration-200 hover:scale-[1.02] shadow-[0_4px_20px_rgba(0,0,0,0.15)] cursor-pointer"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 text-xs sm:text-sm font-semibold text-white bg-[#0052FF] hover:bg-[#0043d6] rounded-full py-3.5 px-8 font-sans transition-all duration-200 hover:scale-[1.02] shadow-[0_4px_20px_rgba(0,82,255,0.35)] cursor-pointer"
           >
             {t.hero.ctaPrimary}
           </button>
@@ -87,7 +86,7 @@ export default function HeroSection({
                 onMouseEnter={() => setActiveStep(idx)}
                 className={`relative group p-4 sm:p-5 rounded-2xl transition-all duration-300 border text-left cursor-pointer ${
                   isActive
-                    ? "bg-white border-neutral-900 shadow-md ring-1 ring-neutral-900/10 -translate-y-0.5"
+                    ? "bg-white border-[#0052FF]/50 shadow-md ring-1 ring-[#0052FF]/20 -translate-y-0.5"
                     : "bg-neutral-50/70 border-neutral-200/90 hover:bg-white hover:border-neutral-300 shadow-sm"
                 }`}
               >
@@ -116,7 +115,7 @@ export default function HeroSection({
                 {/* Active indicator bar */}
                 <div
                   className={`absolute bottom-0 left-4 right-4 h-0.5 rounded-full transition-all duration-300 ${
-                    isActive ? "bg-neutral-950" : "bg-transparent"
+                    isActive ? "bg-[#0052FF]" : "bg-transparent"
                   }`}
                 />
               </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Translations } from "@/lib/translations";
 
 interface ArkhaModalProps {
@@ -10,13 +10,22 @@ interface ArkhaModalProps {
 }
 
 export default function ArkhaModal({ isOpen, onClose, t }: ArkhaModalProps) {
+  useEffect(() => {
+    if (!isOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [isOpen, onClose]);
+
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 overflow-y-auto bg-black/50 backdrop-blur-md animate-fade-slide-in-1">
       <div className="relative w-full max-w-xl my-auto rounded-3xl bg-white border border-neutral-200 shadow-2xl text-neutral-900 overflow-hidden">
         {/* Top Accent Strip */}
-        <div className="h-1.5 w-full bg-gradient-to-r from-blue-600 via-neutral-950 to-purple-600" />
+        <div className="h-1.5 w-full bg-gradient-to-r from-[#0052FF] via-neutral-950 to-[#0052FF]" />
 
         {/* Header */}
         <div className="p-6 sm:p-8 border-b border-neutral-200 flex items-start justify-between">
@@ -33,7 +42,7 @@ export default function ArkhaModal({ isOpen, onClose, t }: ArkhaModalProps) {
           </div>
           <button
             onClick={onClose}
-            className="p-2 rounded-full hover:bg-neutral-100 text-neutral-500 hover:text-neutral-950 transition-colors cursor-pointer"
+            className="p-2 rounded-full hover:bg-neutral-100 text-neutral-500 hover:text-neutral-950 transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0052FF]"
             aria-label={t.modals.close}
           >
             <svg

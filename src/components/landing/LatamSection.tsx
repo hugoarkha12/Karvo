@@ -193,7 +193,7 @@ export default function LatamSection({ t }: LatamSectionProps) {
                           cy={node.y}
                           r="5"
                           fill="none"
-                          stroke="rgba(0,0,0,0.3)"
+                          stroke="rgba(0,82,255,0.45)"
                           strokeWidth="0.6"
                           className="animate-ping"
                           style={{ transformOrigin: `${node.x}px ${node.y}px` }}
@@ -205,7 +205,7 @@ export default function LatamSection({ t }: LatamSectionProps) {
                         cx={node.x}
                         cy={node.y}
                         r={isSelected ? "3.2" : "2.2"}
-                        fill={node.isCore ? "#000000" : isSelected ? "#000000" : "#52525b"}
+                        fill={node.isCore ? "#0052FF" : isSelected ? "#0052FF" : "#52525b"}
                         stroke="#ffffff"
                         strokeWidth="0.8"
                       />
@@ -231,7 +231,7 @@ export default function LatamSection({ t }: LatamSectionProps) {
             {/* Map Legend */}
             <div className="absolute bottom-4 left-6 right-6 flex items-center justify-between text-[10px] font-mono text-neutral-500 pt-2 border-t border-neutral-100">
               <span className="flex items-center gap-1.5 font-semibold text-neutral-800">
-                <span className="w-1.5 h-1.5 rounded-full bg-neutral-900" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#0052FF]" />
                 MÉXICO (CORE HUB)
               </span>
               <span>ALCANCE: LATAM & GLOBAL</span>
@@ -248,7 +248,7 @@ export default function LatamSection({ t }: LatamSectionProps) {
                   onClick={() => setSelectedCountry(c.name)}
                   className={`p-4 rounded-xl transition-all duration-200 border cursor-pointer flex items-center justify-between ${
                     isSelected
-                      ? "bg-white border-neutral-950 shadow-md ring-1 ring-neutral-950/10"
+                      ? "bg-white border-[#0052FF]/60 shadow-md shadow-[#0052FF]/10 ring-1 ring-[#0052FF]/20"
                       : "bg-white border-neutral-200/90 hover:border-neutral-300 shadow-sm"
                   }`}
                 >

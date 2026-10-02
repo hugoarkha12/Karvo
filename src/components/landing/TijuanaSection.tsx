@@ -16,9 +16,6 @@ export default function TijuanaSection({ t }: TijuanaSectionProps) {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="max-w-4xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 border border-neutral-200 text-[10px] font-mono tracking-widest uppercase text-neutral-700 mb-4 shadow-sm">
-            {t.tijuana.tag}
-          </div>
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-normal tracking-[-0.035em] text-neutral-950 font-display leading-[1.1]">
             {t.tijuana.headline}
           </h2>
@@ -58,7 +55,7 @@ export default function TijuanaSection({ t }: TijuanaSectionProps) {
 
             {/* Monumental Center Corridor Flow */}
             <div className="absolute inset-x-0 bottom-8 px-6 text-center">
-              <div className="inline-block p-3 sm:p-4 rounded-2xl bg-white/95 border border-neutral-300 shadow-xl backdrop-blur-xl">
+              <div className="inline-block p-3 sm:p-4 rounded-2xl bg-white/95 border border-[#0052FF]/30 shadow-[0_20px_60px_rgba(0,82,255,0.15)] backdrop-blur-xl">
                 <span className="font-mono text-xs sm:text-base md:text-lg font-bold tracking-widest text-neutral-950 uppercase">
                   {t.tijuana.corridor}
                 </span>
@@ -71,7 +68,7 @@ export default function TijuanaSection({ t }: TijuanaSectionProps) {
             {t.tijuana.milestones.map((m, idx) => (
               <div
                 key={idx}
-                className="p-4 rounded-xl bg-neutral-50/70 border border-neutral-200/90 hover:border-neutral-300 hover:bg-white hover:shadow-md transition-all"
+                className="p-4 rounded-xl bg-neutral-50/70 border border-neutral-200/90 hover:border-[#0052FF]/40 hover:bg-white hover:shadow-md transition-all"
               >
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-[10px] font-mono text-neutral-400 font-bold">

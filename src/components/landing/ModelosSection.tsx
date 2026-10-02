@@ -34,7 +34,7 @@ export default function ModelosSection({
         {/* Dual Cards Comparison */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           {/* Path 1: Karvo Studio */}
-          <div className="p-8 sm:p-10 rounded-3xl bg-neutral-50/80 border border-neutral-200/90 flex flex-col justify-between hover:border-neutral-300 hover:shadow-lg transition-all duration-300">
+          <div className="p-8 sm:p-10 rounded-3xl bg-neutral-50/80 border border-[#0052FF]/30 flex flex-col justify-between hover:border-[#0052FF]/50 hover:shadow-[0_20px_60px_rgba(0,82,255,0.12)] transition-all duration-300">
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-neutral-200 text-[10px] font-mono tracking-wider uppercase text-neutral-700 mb-6 shadow-xs">
                 {t.models.studio.badge}
@@ -54,7 +54,7 @@ export default function ModelosSection({
               <div className="space-y-2.5 pt-4 border-t border-neutral-200">
                 {t.models.studio.highlights.map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2.5 text-xs text-neutral-700 font-sans">
-                    <span className="w-1.5 h-1.5 rounded-full bg-neutral-900" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#0052FF]" />
                     <span>{item}</span>
                   </div>
                 ))}

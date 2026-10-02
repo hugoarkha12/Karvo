@@ -20,9 +20,6 @@ export default function ComoConstruimosSection({ t }: ComoConstruimosProps) {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-14">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 border border-neutral-200 text-[10px] font-mono tracking-widest uppercase text-neutral-700 mb-4 shadow-sm">
-              {t.methodology.tag}
-            </div>
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-normal tracking-[-0.035em] text-neutral-950 font-display max-w-2xl leading-[1.1]">
               {t.methodology.headline}
             </h2>
@@ -43,7 +40,7 @@ export default function ComoConstruimosSection({ t }: ComoConstruimosProps) {
                   onMouseLeave={() => setHoveredIdx(null)}
                   className={`relative p-6 rounded-2xl transition-all duration-300 border flex flex-col justify-between min-h-[260px] h-full ${
                     isHovered
-                      ? "bg-white border-neutral-950 shadow-xl -translate-y-1.5 ring-1 ring-neutral-950/10"
+                      ? "bg-white border-[#0052FF]/60 shadow-xl shadow-[#0052FF]/10 -translate-y-1.5 ring-1 ring-[#0052FF]/20"
                       : "bg-neutral-50/80 border-neutral-200/90 hover:border-neutral-300 hover:bg-white shadow-sm"
                   }`}
                 >
