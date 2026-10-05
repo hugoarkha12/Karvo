@@ -1,271 +1,267 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* ==========================================================================
+   Karvo — design tokens
+   Sistema visual tomado de highalpha.com (fondo gris claro, tinta #171717,
+   titulares grandes en peso 400, radios de 6px, botones píldora) con el azul
+   de marca de Karvo como acento.
+   ========================================================================== */
+
+@theme {
+  /* Color */
+  --color-canvas: #f6f6f6;
+  --color-surface: #ffffff;
+  --color-ink: #171717;
+  --color-ink-soft: #171717c2; /* 76 % — texto secundario */
+  --color-ink-muted: #17171799; /* 60 % — texto terciario */
+  --color-line: #cecece;
+  --color-graphite: #4a4d55; /* bordes sobre fondo oscuro */
+  --color-accent: #0052ff;
+  --color-accent-strong: #0043d6;
+  --color-accent-soft: #9db8ff;
+  --color-on-dark-soft: #ffffffc2;
+  --color-on-dark-muted: #ffffff99;
+
+  /* Forma y layout */
+  --radius-card: 6px;
+  --container-site: 85rem;
+  --spacing-gutter: 1.25rem;
+  --spacing-section: clamp(3.25rem, 2.25rem + 4.2vw, 6.25rem);
+
+  /* Escala tipográfica fluida (móvil → desktop) */
+  --text-display-xxl: clamp(3.5rem, 1.65rem + 7.9vw, 8.75rem);
+  --text-display-xxl--line-height: 1.02;
+  --text-display-xxl--letter-spacing: -0.035em;
+  --text-display: clamp(2.75rem, 1.65rem + 4.7vw, 5.875rem);
+  --text-display--line-height: 1.06;
+  --text-display--letter-spacing: -0.03em;
+  --text-h2: clamp(2.125rem, 1.77rem + 1.5vw, 3.125rem);
+  --text-h2--line-height: 1.1;
+  --text-h2--letter-spacing: -0.015em;
+  --text-h3: clamp(1.75rem, 1.575rem + 0.75vw, 2.25rem);
+  --text-h3--line-height: 1.1;
+  --text-h3--letter-spacing: -0.01em;
+  --text-h4: clamp(1.5rem, 1.325rem + 0.75vw, 2rem);
+  --text-h4--line-height: 1.2;
+  --text-h4--letter-spacing: -0.01em;
+  --text-p-xl: clamp(1.375rem, 1.24rem + 0.56vw, 1.75rem);
+  --text-p-xl--line-height: 1.25;
+  --text-p-lg: clamp(1.1875rem, 1.1rem + 0.4vw, 1.5rem);
+  --text-p-lg--line-height: 1.3;
+  --text-p-md: clamp(1.0625rem, 1rem + 0.25vw, 1.25rem);
+  --text-p-md--line-height: 1.5;
+  --text-p-sm: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
+  --text-p-sm--line-height: 1.4;
+  --text-eyebrow: clamp(0.875rem, 0.85rem + 0.1vw, 1rem);
+  --text-eyebrow--line-height: 1.15;
+  --text-eyebrow--letter-spacing: 0.15em;
+
+  /* Movimiento */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+
+  --animate-glyph-bar: glyph-bar 2.4s var(--ease-in-out-quart) infinite;
+  --animate-glyph-orbit: glyph-orbit 4s var(--ease-in-out-quart) infinite;
+  --animate-glyph-dot: glyph-dot 2.4s ease-in-out infinite;
+  --animate-corridor-dot: corridor-dot 3.2s var(--ease-in-out-quart) infinite;
+
+  @keyframes glyph-bar {
+    0%,
+    100% {
+      transform: scaleY(1);
+    }
+    50% {
+      transform: scaleY(0.5);
+    }
+  }
+
+  @keyframes glyph-orbit {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(22%);
+    }
+  }
+
+  @keyframes glyph-dot {
+    0%,
+    100% {
+      opacity: 0.25;
+    }
+    35% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes corridor-dot {
+    0% {
+      offset-distance: 0%;
+      opacity: 0;
+    }
+    10%,
+    90% {
+      opacity: 1;
+    }
+    100% {
+      offset-distance: 100%;
+      opacity: 0;
+    }
+  }
+}
+
+/* next/font expone la familia como variable CSS en <html>; `inline` hace que la
+   utilidad apunte a esa variable en lugar de resolverla en :root. */
+@theme inline {
+  --font-sans: var(--font-geist), "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
 
 @layer base {
-  :root {
-    --bg: #ffffff;
-    --text: #0a0a0a;
-    --muted: #1a1a1a;
-    --blue: #0052ff;
-    --blue-dark: #0043d6;
-    --blue-deep: #0033aa;
-    --headline-muted: #6b7378;
-    --glass: rgba(0, 0, 0, 0.13);
-    --glass-blur: 18px;
-    --glass-light: rgba(255, 255, 255, 0.28);
-    --radius: 0;
-    --font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --pad-x: clamp(20px, 3.52vw, 64px);
-    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  }
-
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-
   html {
-    scroll-behavior: smooth;
-  }
-
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    overscroll-behavior: none;
-    font-family: var(--font);
-    background-color: #ffffff;
-    background-image: url('/granite-texture.jpg');
-    background-repeat: repeat;
-    background-size: 450px 450px;
-    color: var(--text);
+    /* Altura del navbar sticky: los anclajes (#tesis, #ventures…) no quedan
+       escondidos debajo de él. */
+    --nav-h: 4.5rem;
+    scroll-padding-top: var(--nav-h);
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 
-  a {
-    color: inherit;
-    text-decoration: none;
+  @media (width >= 64rem) {
+    html {
+      --nav-h: 5.75rem;
+    }
   }
 
-  button {
-    font: inherit;
-    border: none;
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  /* Bloquea el scroll del fondo con un diálogo o el menú móvil abiertos. */
+  html:has(dialog[open]),
+  html[data-menu-open] {
+    overflow: hidden;
+  }
+
+  body {
+    background-color: var(--color-canvas);
+    font-size: var(--text-p-md);
+    line-height: 1.25;
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
     cursor: pointer;
   }
-
-  main > :first-child {
-    margin-top: 0 !important;
-  }
-
-  main > :last-child {
-    margin-bottom: 0 !important;
-  }
 }
 
-@layer components {
-  .glass-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    min-height: 34px;
-    padding: 0 18px 0 14px;
-    background: rgba(255, 255, 255, 0.28);
-    border: 1px solid rgba(0, 82, 255, 0.2);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-    border-radius: 0;
-    color: #1a1a1a;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: -0.01em;
-    line-height: 1;
-    white-space: nowrap;
-  }
+/* ==========================================================================
+   Utilidades propias
+   ========================================================================== */
 
-  .btn-wipe {
-    position: relative;
-    overflow: hidden;
-    isolation: isolate;
-    border-radius: 0;
-  }
+/* Subrayado que entra desde la izquierda y sale por la derecha (nav y footer
+   de High Alpha). */
+@utility link-underline {
+  position: relative;
 
-  .btn-wipe::before {
+  &::after {
     content: "";
     position: absolute;
-    inset: 0;
+    inset-inline: 0;
+    bottom: -0.2em;
+    height: 1px;
+    background-color: currentColor;
     transform: scaleX(0);
-    transform-origin: left center;
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    pointer-events: none;
-    z-index: -1;
+    transform-origin: right center;
+    transition: transform 0.5s var(--ease-out-expo);
   }
 
-  .btn-wipe:hover::before {
-    transform: scaleX(1);
+  @media (hover: hover) {
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: left center;
+    }
   }
 
-  .btn-wipe > * {
-    position: relative;
-    z-index: 1;
-  }
-
-  .btn-wipe--blue::before {
-    background: #003ecb;
-  }
-
-  .btn-wipe--light::before {
-    background: #dbe7ff;
-  }
-
-  .btn-wipe--ghost::before {
-    background: rgba(255, 255, 255, 0.78);
-  }
-
-  .mask-line {
-    display: block;
-    overflow: hidden;
-  }
-
-  .accent-paint {
-    position: relative;
-    color: #6b7378;
-    white-space: nowrap;
-  }
-
-  .accent-paint::before,
-  .accent-paint::after {
-    content: attr(data-text);
-    position: absolute;
-    inset: 0;
-    -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 calc(100% - 72px), transparent 100%);
-    mask-image: linear-gradient(90deg, #000 0%, #000 calc(100% - 72px), transparent 100%);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: 0% 100%;
-    mask-size: 0% 100%;
-    animation: accent-fill 1.05s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-    pointer-events: none;
-  }
-
-  .accent-paint::before {
-    color: #8fb0ff;
-    animation-delay: 0.7s;
-  }
-
-  .accent-paint::after {
-    color: #0052ff;
-    animation-delay: 1.08s;
-  }
-
-  .nav-link {
-    position: relative;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: -0.01em;
-    color: #0a0a0a;
-    line-height: 1;
-    white-space: nowrap;
-    padding-bottom: 2px;
-    transition: color 0.22s cubic-bezier(0.16, 1, 0.3, 1), transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-
-  .nav-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 3px;
-    background: #0052ff;
-    transform: scaleX(0);
-    transform-origin: left center;
-    transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-
-  .nav-link:hover {
-    color: #0052ff;
-    transform: translateY(-2px);
-  }
-
-  .nav-link:hover::after {
+  &:focus-visible::after {
     transform: scaleX(1);
   }
 }
 
-.rounded-full,
-.rounded-3xl,
-.rounded-2xl,
-.rounded-xl,
-.rounded-lg,
-.rounded-md,
-.rounded {
-  border-radius: 0 !important;
+/* Entrada del hero. Va en CSS (no en GSAP) para que corra antes de que cargue
+   el JavaScript y el contenido de arriba nunca parpadee. */
+@utility intro-rise {
+  animation: intro-rise 1s var(--ease-out-expo) both;
+  animation-delay: var(--delay, 0s);
 }
 
-@keyframes wipe-left {
-  from {
-    clip-path: inset(0 100% 0 0);
-  }
-  to {
-    clip-path: inset(0 0 0 0);
-  }
+@utility intro-slide {
+  animation: intro-slide 1s var(--ease-out-expo) both;
+  animation-delay: var(--delay, 0s);
 }
 
-@keyframes wipe-right {
-  from {
-    clip-path: inset(0 0 0 100%);
-  }
-  to {
-    clip-path: inset(0 0 0 0);
-  }
-}
-
-@keyframes type-rise {
-  from {
-    transform: translate3d(0, 118%, 0);
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes link-in {
+@keyframes intro-rise {
   from {
     opacity: 0;
-    transform: translate3d(-16px, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 25%, 0);
   }
 }
 
-@keyframes accent-fill {
+@keyframes intro-slide {
   from {
-    mask-size: 0% 100%;
-    -webkit-mask-size: 0% 100%;
-  }
-  to {
-    mask-size: calc(100% + 72px) 100%;
-    -webkit-mask-size: calc(100% + 72px) 100%;
+    opacity: 0;
+    transform: translate3d(1.25rem, 0, 0);
   }
 }
 
-::-webkit-scrollbar {
-  display: none;
+/* Diálogo nativo: entrada suave del panel y del fondo. */
+@utility dialog-motion {
+  &[open] {
+    animation: dialog-in 0.5s var(--ease-out-expo);
+  }
+
+  &[open]::backdrop {
+    animation: backdrop-in 0.4s ease-out;
+  }
 }
+
+@keyframes dialog-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 1.5rem, 0);
+  }
+}
+
+@keyframes backdrop-in {
+  from {
+    opacity: 0;
+  }
+}
+
+/* ==========================================================================
+   Accesibilidad: sin animaciones para quien las desactiva en su sistema.
+   ========================================================================== */
 
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
   *,
   *::before,
   *::after {

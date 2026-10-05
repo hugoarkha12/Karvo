@@ -32,3 +32,6 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# next.js (se regenera en cada `next dev` / `next build`)
+next-env.d.ts
