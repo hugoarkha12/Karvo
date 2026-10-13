@@ -19,12 +19,15 @@ Sitio de una sola página en español e inglés. Referencia visual: highalpha.co
 - **Server Components por defecto.** Islas cliente: `Navbar`, `LanguageSwitch`, `ModalProvider` / `ModalTrigger` / formularios, `VenturesCarousel` y `MotionRoot`.
 - **Animaciones.** Las secciones marcan elementos con `data-anim="title|copy|fade|stagger|zoom|draw"` y `src/components/motion/MotionRoot.tsx` (un solo componente) aplica GSAP. El hero usa CSS (`intro-rise`, `intro-slide`) para no depender de JavaScript. Todo respeta `prefers-reduced-motion`.
 - **Modales.** `<dialog>` nativo (`src/components/modals/Dialog.tsx`). Se abren con `<ModalTrigger modal="founder|diagnostic|arkha">` o con los enlaces `#apply`, `#diagnostic`, `#arkha`.
-- **Formularios.** `submitLead()` en `src/lib/leads.ts` es el único punto de envío. **Hoy solo simula el envío: los datos no se guardan.** Falta decidir el destino (correo, CRM, base de datos).
+- **Formularios.** `submitLead()` (`src/lib/leads.ts`) es una Server Action y el único punto de envío: valida en el servidor con las reglas de `src/lib/lead-fields.ts` (las mismas que dibujan el formulario), guarda en Supabase y, después de responder (`after()`), avisa en Discord con un webhook. **Supabase es la fuente de verdad; Discord solo notifica.** Si falla el guardado, el formulario muestra error y conserva lo escrito; si falla Discord, solo queda en el log del servidor.
+  - Tablas `founder_applications` y `diagnostic_requests`, definidas en `supabase/migrations/` (se aplican en el SQL Editor de Supabase). RLS activo y sin políticas: solo el servidor escribe, con la llave secreta (`src/lib/supabase.ts`, protegido con `server-only`).
+  - La etapa del founder se guarda siempre en español para poder filtrar sin importar el idioma del formulario.
+  - Variables `SUPABASE_URL`, `SUPABASE_SECRET_KEY` y `DISCORD_WEBHOOK_URL` (ver `.env.example`). Ninguna lleva `NEXT_PUBLIC_`: son secretas.
 - **Ventures.** `src/components/sections/ventures/`: el carrusel (cliente) solo cambia de slide; los mosaicos (`tiles.tsx`) se dibujan en el servidor con HTML/SVG y unidades `cqw`. Para usar fotos o capturas reales, reemplaza el mosaico por un `<Image>`.
 
 ## Design system
 
-- Colores: `canvas #f6f6f6`, `surface #fff`, `ink #171717`, `ink-soft` / `ink-muted` (76 % / 60 %), `line #cecece`, `graphite` (bordes sobre oscuro), `accent #0052FF` (azul Karvo).
+- Colores: `canvas #f6f6f6`, `surface #fff`, `ink #171717`, `ink-soft` / `ink-muted` (76 % / 60 %), `line #cecece`, `graphite` (bordes sobre oscuro), `accent #0052FF` (azul Karvo), `danger #c4320a` (errores de formulario).
 - Tipografía fluida: `text-display`, `text-h2…h4`, `text-p-xl…p-sm`, `text-eyebrow`. Titulares en peso 400 y en oración, no en MAYÚSCULAS.
 - Radio `rounded-card` (6px) y botones píldora.
 - Primitivas en `src/components/ui/`: `Section`, `Container`, `Button`, `Tag`, `Eyebrow`, `Icons`, `Logo`. Encabezado estándar de sección: `sections/SectionHeader.tsx`.
@@ -36,4 +39,4 @@ Sitio de una sola página en español e inglés. Referencia visual: highalpha.co
 - Ramas por persona (`rama-alexv`, …) y `main` como rama principal.
 - Commits con Conventional Commits en español (`feat:`, `fix:`, `chore:`, `build:`, `docs:`, `refactor:`).
 - Antes de subir: `npm run typecheck` y `npm run build`.
-- Despliegue: **no se usa Vercel**; el sitio vive en un hosting con dominio propio. El build de producción necesita `NEXT_PUBLIC_SITE_URL` (dominio público) y un servidor Node (`next start`) para que funcione `proxy.ts`.
+- Despliegue: **no se usa Vercel**; el sitio vive en un hosting con dominio propio. El build de producción necesita `NEXT_PUBLIC_SITE_URL` (dominio público) y un servidor Node (`next start`) para que funcionen `proxy.ts` y la Server Action de formularios; el servidor necesita además las variables de Supabase y Discord. Detén el servidor con `SIGTERM` (no `kill -9`) para que termine los avisos pendientes de `after()`.
