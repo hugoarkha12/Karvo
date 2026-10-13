@@ -1,10 +1,12 @@
 "use server";
 
+import { after } from "next/server";
 import { hasLocale, type Locale } from "@/i18n/config";
 import { es } from "@/i18n/dictionaries/es";
 import { en } from "@/i18n/dictionaries/en";
 import { LEAD_FIELDS, LEAD_TABLES, type FieldConfig, type LeadKind } from "./lead-fields";
 import { getSupabaseAdmin } from "./supabase";
+import { notifyDiscord } from "./discord";
 
 type Lead = Record<string, string | null>;
 
@@ -13,13 +15,15 @@ const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 /**
  * Punto único de envío de los formularios (aplicación de founders y
  * diagnóstico de empresas). Es una Server Action: aunque la llame un
- * componente cliente, corre en el servidor, así que las llaves de Supabase
- * nunca llegan al navegador.
+ * componente cliente, corre en el servidor, así que las llaves de Supabase y
+ * la URL del webhook de Discord nunca llegan al navegador.
  *
  * 1. Valida los campos con las mismas reglas que dibujan el formulario
  *    (`lead-fields.ts`).
  * 2. Guarda el registro en Supabase. Si falla, quien llenó el formulario ve
  *    un error y puede reintentar sin perder lo que escribió.
+ * 3. Avisa en Discord después de responder (`after`): la notificación no hace
+ *    esperar a nadie y, si Discord falla, el registro ya quedó guardado.
  */
 export async function submitLead(
   kind: LeadKind,
@@ -40,6 +44,14 @@ export async function submitLead(
     console.error(`[leads] No se pudo guardar el formulario "${kind}":`, error);
     return { ok: false };
   }
+
+  after(async () => {
+    try {
+      await notifyDiscord(kind, locale, lead);
+    } catch (error) {
+      console.error(`[leads] No se pudo avisar en Discord del formulario "${kind}":`, error);
+    }
+  });
 
   return { ok: true };
 }
@@ -86,7 +98,7 @@ function toSpanishStage(value: string): string | null {
 
 /**
  * `type="url"` del navegador también acepta `javascript:` y otros esquemas.
- * Aquí solo pasan enlaces web, porque el equipo los abre.
+ * Aquí solo pasan enlaces web, porque el equipo los abre desde Discord.
  */
 function isWebUrl(value: string) {
   try {
