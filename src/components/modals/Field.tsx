@@ -1,15 +1,6 @@
 import { cn } from "@/lib/utils";
+import type { FieldConfig } from "@/lib/lead-fields";
 import { ChevronDownIcon } from "@/components/ui/Icons";
-
-export type FieldConfig<Name extends string = string> = {
-  name: Name;
-  as?: "input" | "textarea" | "select";
-  type?: "text" | "email" | "url";
-  required?: boolean;
-  autoComplete?: string;
-  /** Ocupa las dos columnas en pantallas medianas. */
-  wide?: boolean;
-};
 
 const control =
   "w-full rounded-card border border-line bg-surface px-4 text-p-sm text-ink transition-colors placeholder:text-ink-muted hover:border-ink/40 focus:border-ink focus:outline-hidden";

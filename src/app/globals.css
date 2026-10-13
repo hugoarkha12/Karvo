@@ -21,6 +21,7 @@
   --color-accent-soft: #9db8ff;
   --color-on-dark-soft: #ffffffc2;
   --color-on-dark-muted: #ffffff99;
+  --color-danger: #c4320a; /* mensajes de error en formularios */
 
   /* Forma y layout */
   --radius-card: 6px;

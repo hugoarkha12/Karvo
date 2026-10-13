@@ -436,6 +436,7 @@ export const es = {
 
   forms: {
     requiredHint: "Obligatorio",
+    error: "No pudimos enviar el formulario. Revisa tus datos e inténtalo de nuevo en unos minutos.",
     founder: {
       eyebrow: "Karvo Ventures",
       title: "Aplicación para founders",

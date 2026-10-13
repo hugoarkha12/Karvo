@@ -434,6 +434,7 @@ export const en: Dictionary = {
 
   forms: {
     requiredHint: "Required",
+    error: "We couldn't send the form. Please check your details and try again in a few minutes.",
     founder: {
       eyebrow: "Karvo Ventures",
       title: "Founder application",

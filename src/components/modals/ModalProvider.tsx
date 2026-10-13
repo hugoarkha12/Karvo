@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
+import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries/es";
 import { Dialog } from "./Dialog";
 import { FounderForm } from "./FounderForm";
@@ -28,10 +29,12 @@ export function useOpenModal() {
 }
 
 export function ModalProvider({
+  locale,
   forms,
   closeLabel,
   children,
 }: {
+  locale: Locale;
   forms: Dictionary["forms"];
   closeLabel: string;
   children: React.ReactNode;
@@ -57,10 +60,24 @@ export function ModalProvider({
       {children}
 
       <Dialog open={active === "founder"} onClose={close} closeLabel={closeLabel} size="lg">
-        <FounderForm copy={forms.founder} requiredHint={forms.requiredHint} closeLabel={closeLabel} onDone={close} />
+        <FounderForm
+          locale={locale}
+          copy={forms.founder}
+          requiredHint={forms.requiredHint}
+          errorMessage={forms.error}
+          closeLabel={closeLabel}
+          onDone={close}
+        />
       </Dialog>
       <Dialog open={active === "diagnostic"} onClose={close} closeLabel={closeLabel}>
-        <DiagnosticForm copy={forms.diagnostic} requiredHint={forms.requiredHint} closeLabel={closeLabel} onDone={close} />
+        <DiagnosticForm
+          locale={locale}
+          copy={forms.diagnostic}
+          requiredHint={forms.requiredHint}
+          errorMessage={forms.error}
+          closeLabel={closeLabel}
+          onDone={close}
+        />
       </Dialog>
       <Dialog open={active === "arkha"} onClose={close} closeLabel={closeLabel}>
         <ArkhaDetails copy={forms.arkha} />

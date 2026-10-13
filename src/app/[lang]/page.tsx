@@ -20,7 +20,7 @@ export default async function HomePage() {
   const [locale, dict] = await Promise.all([getLocale(), getDictionary()]);
 
   return (
-    <ModalProvider forms={dict.forms} closeLabel={dict.common.close}>
+    <ModalProvider locale={locale} forms={dict.forms} closeLabel={dict.common.close}>
       <a
         href="#contenido"
         className="sr-only z-50 rounded-full bg-ink px-5 py-3 text-white focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
