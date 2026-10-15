@@ -2,545 +2,519 @@ import type { Dictionary } from "./es";
 
 export const en: Dictionary = {
   meta: {
-    title: "Karvo — Building the companies of the future",
+    title: "Arkha — AI-powered global payments",
     description:
-      "Karvo is a venture studio that uses artificial intelligence, technology, capital and talent to discover opportunities and build high-potential companies in Latin America.",
-    ogDescription:
-      "Karvo is a venture studio that discovers opportunities, engineers technology, and builds companies designed for next-generation markets.",
+      "Arkha is developing international payments infrastructure that combines artificial intelligence, blockchain technology and programmable financial processes.",
+    ogDescription: "Global payments. Intelligently connected.",
     keywords: [
-      "Karvo",
-      "Venture Studio",
-      "Mexico",
-      "Latin America",
-      "Tijuana",
-      "Artificial Intelligence",
-      "Startups",
       "Arkha",
+      "international payments",
+      "cross-border payments",
+      "business payments",
+      "Mexico",
+      "United States",
+      "artificial intelligence",
+      "blockchain",
+      "stablecoins",
+      "financial infrastructure",
     ],
   },
 
   common: {
-    close: "Close",
-    prev: "Previous",
-    next: "Next",
     openMenu: "Open menu",
     closeMenu: "Close menu",
     language: "Language",
     skipToContent: "Skip to content",
-    home: "Karvo, home",
+    home: "Arkha, home",
     backToTop: "Back to top",
+    newTab: "(opens in a new tab)",
   },
 
   nav: {
     links: [
-      { label: "Thesis", href: "#tesis" },
-      { label: "How we build", href: "#como-construimos" },
-      { label: "Ventures", href: "#ventures" },
-      { label: "Karvo AI", href: "#karvo-ai" },
-      { label: "Enterprises", href: "#empresas" },
+      { label: "Platform", href: "#plataforma" },
+      { label: "Technology", href: "#tecnologia" },
+      { label: "Use cases", href: "#casos-de-uso" },
+      { label: "About", href: "#nosotros" },
     ],
-    cta: "Build",
-    mobileCta: "Build with Karvo",
+    primary: "Become an Arkha partner",
+    secondary: "Contact us",
   },
 
   hero: {
-    location: "Mexico · Latin America",
-    line1: "Building the companies",
-    line2: "of the future.",
-    subheadline:
-      "Karvo is a venture studio that discovers opportunities, engineers technology, and builds companies designed for next-generation markets.",
+    eyebrow: "AI-powered global payments",
+    line1: "Global payments.",
+    line2: "Intelligently connected.",
+    body: [
+      "Arkha is developing a new way to manage international business payments, combining artificial intelligence, blockchain infrastructure and programmable financial technology in a unified experience.",
+      "We are starting with Mexico and the United States. We are building with a global vision.",
+    ],
+    primary: "Become an Arkha partner",
+    secondary: "Explore our platform",
+    note: "Building the next generation of infrastructure for international payments.",
+    graphic: {
+      label: "Conceptual illustration: an abstract digital network connecting Mexico and the United States.",
+      origin: "Mexico",
+      destination: "United States",
+      caption: "Conceptual illustration",
+      chips: ["Route analysis", "Authorization controls", "Tracking"],
+    },
+    principles: [
+      "Global vision from day one",
+      "AI built into the product",
+      "Blockchain where it adds measurable value",
+      "Security and compliance by design",
+    ],
+  },
+
+  problem: {
+    eyebrow: "The challenge",
+    headline: "Global trade is moving faster than the traditional payments experience.",
+    body: [
+      "Companies operating across countries can face fragmented payment providers, foreign exchange costs, disconnected systems and limited visibility into the status of their international transfers.",
+      "As companies grow, managing payments across currencies, institutions and financial systems can become increasingly complex.",
+    ],
     cards: [
       {
-        key: "studio",
-        title: "Karvo Studio",
-        desc: "We identify opportunities and build companies from day zero.",
-        href: "#studio",
+        title: "Fragmented infrastructure",
+        desc: "Companies often rely on different providers and systems to manage their international payments.",
       },
       {
-        key: "ventures",
-        title: "Karvo Ventures",
-        desc: "We build alongside exceptional founders with technology, AI and capital.",
-        href: "#karvo-ventures",
+        title: "Limited visibility",
+        desc: "Understanding total costs, the status of a transfer and its estimated arrival time can be difficult when several providers are involved.",
       },
       {
-        key: "ai",
-        title: "Karvo AI",
-        desc: "We bring AI to real businesses and turn their friction into new companies.",
-        href: "#karvo-ai",
+        title: "Operational complexity",
+        desc: "Currency exchange, documentation, reconciliation and payment coordination can create unnecessary work.",
       },
     ],
+    note: "Experiences vary by company, provider and payment corridor.",
   },
 
-  thesis: {
-    eyebrow: "Our thesis",
-    headline: "Great companies begin with great opportunities.",
-    intro:
-      "We believe Latin America’s next generation of great companies will be built differently.",
-    shifts: [
+  platform: {
+    eyebrow: "A new way to connect payments",
+    headline: "An intelligent layer for international payments.",
+    body: [
+      "Arkha aims to connect payment processes, intelligent automation and modern financial infrastructure through a unified platform.",
+      "Our approach is designed to help companies evaluate payment options, automate operational processes and connect with compatible financial networks through a simpler experience.",
+    ],
+    diagram: {
+      caption: "Conceptual architecture",
+      company: "Your company",
+      layer: "Intelligent layer",
+      layerChips: ["AI", "Programmable rules", "Connectivity"],
+      networks: ["Payment providers", "Financial systems", "Digital asset networks"],
+    },
+    capabilities: [
       {
-        title: "Smaller teams.",
-        desc: "Hyper-dense talent executing with surgical velocity and zero bureaucracy.",
+        title: "Payment intelligence",
+        desc: "Analyze available routes, costs, currencies and the requirements of each transaction to help companies make informed decisions.",
       },
       {
-        title: "More powerful technology.",
-        desc: "Modern infrastructure allowing lean teams to achieve what previously required hundreds.",
+        title: "Programmable financial processes",
+        desc: "Use rules, permissions and smart contracts, where appropriate, to coordinate predefined financial operations.",
       },
       {
-        title: "Artificial intelligence at the core.",
-        desc: "AI engineered as the operational foundation, not a superficial veneer.",
-      },
-      {
-        title: "Faster experimentation.",
-        desc: "Validation and iteration cycles compressed from quarters into days.",
-      },
-      {
-        title: "Global ambition.",
-        desc: "Born at the frontier with an international mindset and world-class standards.",
+        title: "Connected financial infrastructure",
+        desc: "Integrate with compatible payment providers and digital asset systems, without necessarily depending on a single network.",
       },
     ],
-    conclusion:
-      "Karvo combines technology, talent, capital, and market intelligence to transform real opportunities into enduring companies.",
-    equationTitle: "Karvo is the convergence of",
-    equation: ["Venture Studio", "AI", "Technology", "Capital", "Network"],
-    notTitle: "What we are not",
-    notList: [
-      "A consultancy",
-      "An AI agency",
-      "A traditional accelerator",
-      "A school",
-      "A traditional VC",
-    ],
+    closing: ["The complexity stays in the infrastructure.", "The experience stays simple."],
   },
 
-  method: {
-    eyebrow: "How we build",
-    headline: "From an opportunity to a company.",
-    subtitle:
-      "A disciplined, methodical, and repeatable process to turn acute problems into sustainable technology companies.",
+  howItWorks: {
+    eyebrow: "How it works",
+    headline: "From request to financial execution.",
     steps: [
       {
-        title: "Discover",
-        desc: "We pinpoint structural problems, overlooked markets, and opportunities worth building.",
-        tags: ["Exploration", "Research"],
+        title: "Initiate",
+        desc: "The company specifies the recipient, amount, currency and payment requirements.",
       },
       {
-        title: "Validate",
-        desc: "We engage directly with real clients and markets to prove acute demand exists.",
-        tags: ["Direct evidence"],
+        title: "Analyze",
+        desc: "Arkha’s intelligence layer will evaluate available routes, estimated costs, requirements and relevant operational information.",
       },
       {
-        title: "Build",
-        desc: "We unite elite talent, software engineering, and artificial intelligence to create the product.",
-        tags: ["Engineering", "AI"],
+        title: "Coordinate",
+        desc: "The platform will coordinate the selected process with compatible payment infrastructure and apply the corresponding authorization controls.",
       },
       {
-        title: "Launch",
-        desc: "We turn validated opportunities into companies and assemble the founding team to run them.",
-        tags: ["Founding team", "Spinout"],
-      },
-      {
-        title: "Scale",
-        desc: "We provide capital, technology, talent, strategy, and network to accelerate growth.",
-        tags: ["Global acceleration"],
+        title: "Track",
+        desc: "The company will be able to check the payment status and access relevant transaction information, depending on available integrations.",
       },
     ],
+    note: "This flow represents the intended direction of the product. Payment routes, currencies, features and execution capabilities will depend on future integrations, available partners and applicable regulation.",
   },
 
-  ai: {
-    eyebrow: "Artificial intelligence",
-    headline: "Artificial intelligence is our multiplier.",
-    intro: [
-      "AI is radically reshaping the economics of building a company.",
-      "It enables faster research, product engineering with leaner teams, automated operations, and experimentation at an unprecedented velocity.",
-    ],
-    realityNote: "Karvo is engineered around this new reality.",
-    vectors: [
-      {
-        title: "Research",
-        role: "Exploration & data",
-        desc: "Accelerated market analysis, regulatory synthesis, and deep identification of operational friction.",
-      },
-      {
-        title: "Product",
-        role: "Design & UX",
-        desc: "Rapid functional specifications, instant UI prototypes, and continuous user loop validations.",
-      },
-      {
-        title: "Engineering",
-        role: "Code & architecture",
-        desc: "Assisted development, automated test generation, and continuous deployment of resilient systems.",
-      },
-      {
-        title: "Operations",
-        role: "Operational velocity",
-        desc: "Workflow automation, data reconciliation, and internal pipeline orchestration.",
-      },
-      {
-        title: "Growth",
-        role: "Distribution",
-        desc: "Algorithmic segmentation, acquisition experimentation, and real-time cohort analytics.",
-      },
-      {
-        title: "Intelligence",
-        role: "Strategic decision",
-        desc: "Integrated models supporting executive strategic decisions and proactive market telemetry.",
-      },
-    ],
-    note: "We deploy AI tools and capabilities that are operationally validated in production, avoiding speculative claims.",
-  },
-
-  models: {
-    eyebrow: "Two ways of building",
-    headline: "Two paths. One mission.",
-    subtitle:
-      "We engineered two complementary models to catalyze and build exceptional technology companies.",
-    studio: {
-      badge: "In-house incubation",
-      title: "Karvo Studio",
-      subhead: "We build from day zero.",
-      desc: "We identify opportunities, validate markets, and engineer new companies from the ground up.",
-      cta: "See how we build",
-      highlights: [
-        "Proprietary insight discovery",
-        "Internal software architecture & prototyping",
-        "Recruiting executive co-founders",
-        "Foundational incubation capital",
-      ],
-    },
-    ventures: {
-      badge: "Co-building with founders",
-      title: "Karvo Ventures",
-      subhead: "We build alongside exceptional founders.",
-      desc: "We partner with ambitious entrepreneurs, injecting technology, AI, capital, strategy, and network to build extraordinary companies.",
-      cta: "Apply to Karvo",
-      highlights: [
-        "Hands-on co-building with top founders",
-        "Direct injection of AI & engineering horsepower",
-        "Rapid market validation & pilots",
-        "Access to institutional capital & distribution",
-      ],
-    },
-  },
-
-  karvoAi: {
-    eyebrow: "Karvo AI",
-    headline: "Enterprise transformation reveals tomorrow’s opportunities.",
+  technology: {
+    eyebrow: "Designed for programmable finance",
+    headline: "Artificial intelligence and blockchain, working together.",
     body: [
-      "We work alongside enterprises and SMEs to pinpoint exactly where artificial intelligence can transform their operations, products, and business models.",
-      "By being deeply embedded in real business operations, we identify recurring industrial bottlenecks that can be spun out into new scalable tech companies.",
+      "Arkha is exploring how to combine artificial intelligence and blockchain technology to simplify international payment operations.",
+      "We believe each technology should have a clear role: improving decision-making, enabling programmable processes and connecting compatible financial systems.",
     ],
-    flowTitle: "From enterprise friction to new ventures",
-    flow: [
-      { name: "Enterprise", desc: "Real-world operations with acute, high-cost friction." },
-      { name: "AI Assessment", desc: "Rigorous diagnostic on technical feasibility & automation." },
-      { name: "Problem", desc: "Isolating the critical, repeatable systemic bottleneck." },
-      { name: "Opportunity", desc: "Cross-industry market size & economic validation." },
-      { name: "New company", desc: "Engineering and spinning out a standalone software venture." },
+    cards: [
+      {
+        key: "ai",
+        title: "Artificial intelligence",
+        desc: "Intelligent analysis of payment information, available routes, operational requirements and potential anomalies.",
+      },
+      {
+        key: "stablecoins",
+        title: "Stablecoin infrastructure",
+        desc: "Exploring settlement options with digital assets pegged to traditional currencies when they offer concrete benefits and their use is legally viable.",
+      },
+      {
+        key: "contracts",
+        title: "Smart contracts",
+        desc: "Programmable rules for predefined operations, permissions and transaction conditions, where the network in use allows it.",
+      },
+      {
+        key: "integrations",
+        title: "Financial integrations",
+        desc: "Connectivity with payment providers and other financial infrastructure through APIs and appropriate partnerships.",
+      },
     ],
-    note: "We are not an agency and we don’t bill consulting hours. We design solutions to real friction and turn them into independent companies.",
-    cta: "Explore Karvo AI",
+    note: "Arkha’s technology and integrations are in development. Capabilities related to blockchain, stablecoins and smart contracts will only be incorporated when appropriate and once they have been technically and legally validated.",
   },
 
-  ventures: {
-    eyebrow: "Ventures",
-    headline: "Companies built by Karvo.",
-    subtitle:
-      "We only show genuine initiatives and companies under active development.",
-    cta: "Build with Karvo",
-    carouselLabel: "Companies built by Karvo",
-    slideLabel: "{current} of {total}",
+  market: {
+    eyebrow: "Our first market",
+    headline: "Connecting business payments between Mexico and the United States.",
+    body: [
+      "Arkha is starting by exploring the cross-border payment processes of companies operating between Mexico and the United States.",
+      "We are focused on understanding how companies manage their international payments, evaluate available routes and coordinate their financial operations between both countries.",
+    ],
+    corridor: {
+      origin: "Mexico",
+      destination: "United States",
+      tag: "Target market",
+    },
+    useCasesTitle: "Use cases",
+    useCases: [
+      {
+        title: "Importers and distributors",
+        desc: "Companies that regularly pay suppliers on the other side of the border.",
+      },
+      {
+        title: "Manufacturers and suppliers",
+        desc: "Companies managing recurring payments across international supply chains.",
+      },
+      {
+        title: "Fintechs and payment platforms",
+        desc: "Technology companies looking to integrate programmable payment processes and new financial infrastructure solutions.",
+      },
+    ],
+    closing: "Our initial focus is specific by design. Our long-term ambition is global.",
+  },
+
+  vision: {
+    eyebrow: "A broader vision",
+    headline: "Building a more connected financial system.",
+    body: [
+      "Our long-term vision is to make international financial operations more accessible, programmable and interoperable.",
+      "We are starting by exploring business payments between Mexico and the United States. Over time, Arkha could expand to other corridors, programmable financial services and new applications of digital financial infrastructure.",
+    ],
+    stages: [
+      {
+        when: "Today",
+        title: "Validate",
+        desc: "Understand customer needs, test the product concept and establish the right technology and financial partnerships.",
+      },
+      {
+        when: "Next",
+        title: "Connect",
+        desc: "Develop payment integrations, intelligent processes and a reliable experience for businesses.",
+      },
+      {
+        when: "Long term",
+        title: "Expand",
+        desc: "Explore new markets, assets and programmable financial services as the business and regulatory environment allow.",
+      },
+    ],
+  },
+
+  why: {
+    eyebrow: "Why Arkha?",
+    headline: "Financial infrastructure should feel simple.",
     items: [
       {
-        key: "arkha",
-        name: "Arkha",
-        tag: "Studio",
-        status: "Prototype / Research",
-        oneLiner: "Programmable financial infrastructure for global trade.",
-        cta: "Explore Arkha",
+        title: "Intelligence by design",
+        desc: "Use AI to reduce complexity and help companies make better-informed decisions about their payments.",
       },
       {
-        key: "pipeline-validation",
-        name: "Coming soon",
-        tag: "Studio pipeline",
-        status: "In validation",
-        oneLiner: "Initiative in market validation and specialized AI architecture.",
-        cta: "",
+        title: "Built for interoperability",
+        desc: "Connect existing financial systems without requiring every participant to adopt a new network.",
       },
       {
-        key: "pipeline-discovery",
-        name: "Coming soon",
-        tag: "Discovery stage",
-        status: "In research",
-        oneLiner: "Exploration of cross-border operational inefficiencies.",
-        cta: "",
+        title: "Programmable when it adds value",
+        desc: "Use blockchain and smart contracts only when they offer a clear, measurable benefit.",
+      },
+      {
+        title: "Compliance by design",
+        desc: "Build processes that take into account permissions, partner requirements and applicable regulatory obligations.",
       },
     ],
-    mock: {
-      app: "Cross-border settlement",
-      send: "You send",
-      receive: "They receive",
-      rate: "Exchange rate",
-      steps: ["Funding", "Conversion", "Settlement"],
-      live: "In progress",
-      concept: "Concept interface",
-      facts: [
-        { label: "Corridor", value: "MX ⇄ US" },
-        { label: "Settlement", value: "Programmable" },
-        { label: "Rails", value: "B2B" },
-        { label: "Status", value: "Prototype" },
+  },
+
+  partners: {
+    eyebrow: "Build with us",
+    headline: "Help us build the future of international payments.",
+    body: "Arkha is at an early stage of development. We want to connect with companies, fintechs, payment infrastructure providers and technology partners interested in exploring new ways to manage international financial operations.",
+    audience: ["Companies", "Fintechs", "Payment infrastructure", "Technology partners", "Investors"],
+  },
+
+  form: {
+    title: "Become an early partner",
+    subtitle: "Let’s talk. Help us validate the problem and shape the product.",
+    requiredHint: "Required",
+    selectPlaceholder: "Select an option",
+    fields: {
+      name: { label: "Full name", placeholder: "e.g. Sofia Morales" },
+      email: { label: "Business email", placeholder: "sofia@company.com" },
+      company: { label: "Company name", placeholder: "Your company’s name" },
+      country: { label: "Country", placeholder: "e.g. United States" },
+      companyType: { label: "Company type", placeholder: "" },
+      monthlyVolume: { label: "Approximate monthly international payment volume", placeholder: "" },
+      interest: {
+        label: "What would you like to explore with Arkha?",
+        placeholder: "Tell us about your international payments, the problem you want to solve or the kind of partnership you’re interested in.",
+      },
+    },
+    options: {
+      companyType: [
+        "Importer, distributor or trading company",
+        "Manufacturer or supplier",
+        "Fintech or payments company",
+        "Financial infrastructure provider",
+        "Technology partner",
+        "Investor",
+        "Other",
       ],
-      stealth: "Stealth",
-      confidential: "Confidential",
+      monthlyVolume: [
+        "Less than US$25,000",
+        "US$25,000–US$100,000",
+        "US$100,000–US$500,000",
+        "US$500,000–US$2 million",
+        "More than US$2 million",
+        "Not applicable / just exploring",
+      ],
+    },
+    consent: {
+      before: "I have read and accept the ",
+      link: "Privacy notice",
+      after: ".",
+    },
+    sensitiveNote: "Please don’t share ID documents or banking details in this form.",
+    submit: "Send request",
+    submitting: "Sending…",
+    successTitle: "Request received",
+    successMessage: "Thank you for your interest in Arkha. We have received your information.",
+    errors: {
+      invalid: "Please make sure all required fields are complete and the email address is valid.",
+      server: "We couldn’t send your request. Your information is still here: please try again in a few minutes.",
     },
   },
 
-  latam: {
-    eyebrow: "Latin America",
-    headline: "Born in Latin America. Built for the world.",
+  investors: {
+    eyebrow: "Investors and partners",
+    headline: "Building the next generation of financial infrastructure.",
     body: [
-      "Latin America is full of massive problems, underserved markets, and extraordinary talent.",
-      "Karvo aims to build companies from here that compete on the global stage.",
+      "We are exploring the technology, partnerships and business model needed to build an AI-powered cross-border payments platform.",
+      "We would like to talk with early-stage investors, fintech founders, financial infrastructure providers and potential pilot customers.",
     ],
-    visionNote:
-      "Mexico is our launchpad. Latin America is our market. The world is our ambition.",
-    countries: [
-      { name: "Mexico", role: "Launchpad & cross-border corridor", tag: "HQ", core: true },
-      { name: "Brazil", role: "Largest market scale in the region", tag: "Target market", core: false },
-      { name: "Colombia", role: "Vibrant innovation & engineering hub", tag: "Target market", core: false },
-      { name: "Argentina", role: "World-class technical & software talent", tag: "Target market", core: false },
-      { name: "Chile", role: "Institutional stability & enterprise tech", tag: "Target market", core: false },
-      { name: "Peru", role: "Expanding economy & agile digital adoption", tag: "Target market", core: false },
-    ],
-    disclaimer:
-      "Karvo operates from Mexico and engages with talent and markets across the region. We do not claim a physical presence where operating entities have not yet been established.",
+    cta: "Contact the founding team",
   },
 
-  tijuana: {
-    eyebrow: "Tijuana",
-    headline: "Born in Tijuana. Connected with the world.",
-    body: [
-      "Karvo is born in Tijuana, a vibrant city on the border between Mexico and the United States.",
-      "From here, we build companies capable of growing first in Mexico, expanding across Latin America, and ultimately competing globally.",
-    ],
-    visionTag: "Cross-border corridor vision · Zona Río",
-    imageAlt: "Workspace overlooking Tijuana at sunset",
-    corridor: [
+  faq: {
+    headline: "Frequently asked questions",
+    more: "Have another question?",
+    moreCta: "Write to us",
+    items: [
       {
-        name: "Tijuana",
-        desc: "The world’s most crossed border, industrial dynamism, and a direct link to California.",
+        question: "What is Arkha?",
+        answer:
+          "Arkha is an early-stage project developing an artificial intelligence–based approach to international business payments, with a long-term vision of programmable financial infrastructure.",
       },
       {
-        name: "Mexico",
-        desc: "National validation ground, advanced manufacturing, and enterprise adoption.",
+        question: "Does Arkha process payments today?",
+        answer:
+          "Arkha is at an early stage of development. Payment availability will depend on the product, integrations, partners and applicable regulatory requirements.",
       },
       {
-        name: "Latam",
-        desc: "Scale across economies unified by shared challenges and language.",
+        question: "Will companies have to use cryptocurrencies?",
+        answer:
+          "The intended experience aims to hide unnecessary technical complexity. Arkha could use stablecoins and blockchain infrastructure when appropriate, but availability will depend on the payment route and legal requirements.",
       },
       {
-        name: "Global",
-        desc: "Software and financial infrastructure competing at global standards.",
+        question: "Will recipients need an Arkha account?",
+        answer:
+          "The product vision includes processes in which recipients can receive funds through existing financial providers without necessarily using Arkha’s interface. This will depend on the route and the available integrations.",
+      },
+      {
+        question: "Which countries will Arkha support?",
+        answer:
+          "The initial target market is Mexico and the United States. Other corridors will be evaluated as the product progresses.",
+      },
+      {
+        question: "How will Arkha use artificial intelligence?",
+        answer:
+          "Arkha plans to use AI to analyze payment information, compare available options, automate operational processes and detect anomalies. Sensitive financial actions will be subject to appropriate controls and authorizations.",
+      },
+      {
+        question: "Will Arkha issue its own cryptocurrency?",
+        answer:
+          "Arkha does not currently issue its own cryptocurrency. The initial strategy is to evaluate existing blockchain networks and stablecoins rather than launch its own token.",
+      },
+      {
+        question: "Is Arkha a bank?",
+        answer:
+          "Arkha is being developed as a financial technology platform. Its legal structure and specific services will determine the applicable authorizations, partnerships and regulatory obligations.",
+      },
+      {
+        question: "How can my company get involved?",
+        answer:
+          "Companies and technology partners can submit their details through the contact form to express interest in future pilots and product conversations.",
       },
     ],
-  },
-
-  network: {
-    eyebrow: "Network",
-    headline: "Great companies are built by great people.",
-    body: "Building a company requires far more than capital. Karvo is cultivating a network of individuals capable of building them.",
-    nodes: [
-      { name: "Founders", role: "Entrepreneurs obsessed with real problems." },
-      { name: "Engineers", role: "Software architects and AI practitioners." },
-      { name: "Operators", role: "Product, growth, and tactical execution leaders." },
-      { name: "Investors", role: "Patient capital aligned with long-term vision." },
-      { name: "Companies", role: "Enterprises providing real validation & workflows." },
-      { name: "Talent", role: "High-caliber operators across the Americas." },
-      { name: "Universities", role: "Academic research bridges & emerging minds." },
-      { name: "Partners", role: "Global tech platforms & ecosystem allies." },
-    ],
-    note: "We connect complementary capabilities to maximize the odds of success.",
-  },
-
-  founders: {
-    eyebrow: "Founders",
-    headline: "Are you building something extraordinary?",
-    body: "We look for ambitious founders building technology companies with the potential to transform markets.",
-    bullets: [
-      "Direct injection of engineering & AI capacity",
-      "Initial capital and operational support",
-      "Cross-border and global distribution network",
-    ],
-    cta: "Apply to Karvo",
-    meta: ["16 questions", "3–5 minutes", "Strictly confidential"],
-  },
-
-  companies: {
-    eyebrow: "Enterprises",
-    headline: "Do you want to build with AI?",
-    body: "Whether you are a startup, SME, or established enterprise, we can help you uncover where artificial intelligence creates genuine economic value.",
-    pills: [
-      "Technical feasibility diagnostics",
-      "Core operations automation",
-      "Spinout software product identification",
-    ],
-    cta: "Diagnose my company",
-  },
-
-  finalCta: {
-    eyebrow: "The future starts here",
-    headline: "Latin America’s next great company could start here.",
-    subheadline: "Let’s build it.",
-    primary: "Build with Karvo",
-    secondary: "Diagnose my company",
   },
 
   footer: {
-    tagline: "We build the companies of the future.",
-    location: "Tijuana · Mexico · Latin America",
-    columns: [
-      {
-        title: "Studio",
-        links: [
-          { label: "Our thesis", href: "#tesis" },
-          { label: "How we build", href: "#como-construimos" },
-          { label: "Artificial intelligence", href: "#ia" },
-          { label: "Two ways of building", href: "#modelos" },
-        ],
-      },
-      {
-        title: "Ventures",
-        links: [
-          { label: "Arkha", href: "#ventures" },
-          { label: "Validation pipeline", href: "#ventures" },
-          { label: "Karvo AI", href: "#karvo-ai" },
-        ],
-      },
-      {
-        title: "Ecosystem",
-        links: [
-          { label: "Latin America", href: "#latam" },
-          { label: "Tijuana", href: "#tijuana" },
-          { label: "Network", href: "#network" },
-        ],
-      },
+    description: "AI-powered global payments infrastructure.",
+    navTitle: "Arkha",
+    links: [
+      { label: "Platform", href: "#plataforma" },
+      { label: "Technology", href: "#tecnologia" },
+      { label: "Use cases", href: "#casos-de-uso" },
+      { label: "About", href: "#nosotros" },
+      { label: "Contact", href: "#contacto" },
     ],
-    access: {
-      title: "Access",
-      founder: "Apply as a founder",
-      diagnostic: "Diagnose my company",
-    },
+    legalTitle: "Legal",
+    legalLinks: [
+      { label: "Privacy notice", path: "/privacidad" },
+      { label: "Terms of use", path: "/terminos" },
+    ],
+    disclaimer:
+      "Arkha is an early-stage project. The features, integrations, payment routes and services described on this site may be in development and are not necessarily available for use. References to digital assets and stablecoins do not constitute an offer to buy or sell financial products. Any services offered will be subject to applicable law and to the terms of the corresponding providers.",
     rights: "All rights reserved.",
   },
 
-  forms: {
-    requiredHint: "Required",
-    error: "We couldn't send the form. Please check your details and try again in a few minutes.",
-    founder: {
-      eyebrow: "Karvo Ventures",
-      title: "Founder application",
-      subtitle: "We assess technical rigor, problem depth, and execution velocity.",
-      groups: [
-        "Founder & company",
-        "Opportunity & product",
-        "Stage, traction & team",
-        "Capital, why Karvo & deck",
+  legal: {
+    backHome: "Back to home",
+    updatedLabel: "Last updated",
+    updated: "October 14, 2026",
+    privacy: {
+      title: "Privacy notice",
+      description: "What data Arkha collects through this site, what it is used for and how you can exercise your rights.",
+      intro:
+        "This notice explains what personal data Arkha collects through this site, what we use it for and how you can exercise your rights over it.",
+      sections: [
+        {
+          title: "Who is responsible for your data",
+          body: [
+            "Arkha is responsible for processing the personal data you share with us through this site. Arkha is an early-stage project in development.",
+          ],
+        },
+        {
+          title: "Data we collect",
+          body: [
+            "Only what you enter in the contact form: full name, business email, company name, country, company type, an approximate range of monthly international payment volume and, if you choose to share it, a free-text message.",
+            "We do not request sensitive personal data, ID documents or detailed banking or financial information. Please do not include them in the free-text message.",
+          ],
+        },
+        {
+          title: "What we use it for",
+          body: [
+            "To respond to your request and follow up on the conversation, and to evaluate your interest in pilots, technology partnerships or investment conversations related to Arkha.",
+          ],
+        },
+        {
+          title: "How we protect it and who has access",
+          body: [
+            "We store the information in a database with access restricted to the Arkha team. To run the site and receive notifications of new requests, we use technology service providers (hosting, database and notifications) that process the data on Arkha’s behalf and only for those purposes.",
+            "We do not sell your data or share it with third parties for their own purposes, except when required by law or by a competent authority.",
+          ],
+        },
+        {
+          title: "How long we keep it",
+          body: ["For as long as needed for the purposes described, or until you ask us to delete it."],
+        },
+        {
+          title: "Your rights",
+          body: [
+            "You can request access to, correction or deletion of your data, object to its use or withdraw your consent. To do so, send us your request through this site’s contact form, stating the right you want to exercise and the email address you used to write to us.",
+          ],
+        },
+        {
+          title: "Cookies",
+          body: [
+            "This site uses a single technical cookie (NEXT_LOCALE) to remember the language you chose. We do not use advertising or tracking cookies.",
+          ],
+        },
+        {
+          title: "Changes to this notice",
+          body: ["We will publish any changes on this page, along with the date of the last update."],
+        },
       ],
-      fields: {
-        name: { label: "Full name", placeholder: "e.g. Mateo Rivera" },
-        email: { label: "Contact email", placeholder: "mateo@startup.com" },
-        linkedin: { label: "LinkedIn profile", placeholder: "https://linkedin.com/in/…" },
-        company: { label: "Company or project name", placeholder: "Company or project name" },
-        website: { label: "Website or demo (if available)", placeholder: "https://yourcompany.com" },
-        whatBuilding: {
-          label: "What are you building?",
-          placeholder: "Describe the technology or product in a few sentences…",
-        },
-        problemSolving: {
-          label: "What problem are you solving?",
-          placeholder: "Which economic, operational, or structural inefficiency are you attacking?",
-        },
-        whoCustomer: {
-          label: "Who is your customer?",
-          placeholder: "e.g. Mid-size logistics companies in Mexico, agricultural exporters…",
-        },
-        stage: { label: "Current stage", placeholder: "" },
-        revenue: { label: "Revenue (current MRR / ARR)", placeholder: "e.g. Pre-revenue / $5k MRR / $120k ARR" },
-        traction: {
-          label: "Traction (users, pilots, waitlist, etc.)",
-          placeholder: "Key metrics, ongoing pilots, letters of intent, or transaction volume…",
-        },
-        team: {
-          label: "Team (founders, core roles, full-time status)",
-          placeholder: "e.g. 2 full-time technical co-founders, 1 commercial lead",
-        },
-        capitalRaised: { label: "Capital raised to date", placeholder: "Bootstrapped / $50k FF / etc." },
-        capitalSought: {
-          label: "Capital sought or immediate needs",
-          placeholder: "e.g. $150k – $300k to accelerate product and AI",
-        },
-        whyKarvo: {
-          label: "Why Karvo?",
-          placeholder: "What do you expect from our studio and technical capacity?",
-        },
-        pitchDeck: {
-          label: "Pitch deck link (Google Drive, DocSend, etc.)",
-          placeholder: "https://docsend.com/… or a public Google Drive link",
-        },
-      },
-      stageOptions: [
-        "Idea / Conceptual",
-        "Prototype / Functional MVP",
-        "First users / Paid pilots",
-        "Traction / Growth",
-      ],
-      submit: "Submit application",
-      submitting: "Submitting application…",
-      successTitle: "Application received",
-      successMessage:
-        "Our team will review your application and reach out if there is strategic alignment.",
-      confidentiality: "Strictly confidential",
     },
-    diagnostic: {
-      eyebrow: "Karvo AI",
-      title: "Karvo AI diagnostic",
-      subtitle:
-        "Let us uncover where AI can automate critical bottlenecks and unlock new commercial opportunities for your company.",
-      fields: {
-        company: { label: "Company name", placeholder: "Company or organization name" },
-        contact: { label: "Contact person & title", placeholder: "e.g. Sofía Morales, COO" },
-        email: { label: "Corporate email", placeholder: "sofia@company.com" },
-        industry: { label: "Sector / Industry", placeholder: "Logistics, manufacturing, retail, financial services…" },
-        challenge: {
-          label: "Which process or operation creates the most friction or cost?",
-          placeholder: "Briefly describe the operational friction, manual workload, or bottleneck to solve…",
+    terms: {
+      title: "Terms of use",
+      description: "Conditions for using the website of Arkha, an early-stage project.",
+      intro: "By using this site you accept these terms. If you do not agree with them, please do not use it.",
+      sections: [
+        {
+          title: "About this site",
+          body: [
+            "This site presents Arkha, an early-stage project exploring a new way to manage international business payments. Its content is informational.",
+          ],
         },
-      },
-      submit: "Request diagnostic",
-      submitting: "Sending…",
-      successTitle: "Request received",
-      successMessage: "A member of our team will contact you shortly.",
-      confidentiality: "Confidentiality guaranteed",
-    },
-    arkha: {
-      eyebrow: "Venture 01 · Karvo Studio",
-      title: "Arkha",
-      subtitle: "AI × Blockchain × Financial infrastructure",
-      statusLabel: "Status",
-      status: "Prototype / Research",
-      desc: "Programmable financial infrastructure for global trade.",
-      details:
-        "Arkha engineers programmable financial rails designed specifically to streamline and secure cross-border settlements and corporate payments across Mexico, the United States, and Latin America.",
-      facts: [
-        { label: "Technical focus", value: "Cross-border settlement rails and programmable contracts." },
-        { label: "Main corridor", value: "B2B trade between Mexico, the United States, and Latin America." },
+        {
+          title: "Features in development",
+          body: [
+            "The features, integrations, payment routes and services described may be in development and are not necessarily available. Illustrations and diagrams are conceptual and do not show real operations.",
+          ],
+        },
+        {
+          title: "No offer or advice",
+          body: [
+            "Nothing on this site constitutes an offer of financial services, an offer to buy or sell digital assets or stablecoins, or financial, legal or tax advice. Any services that may be offered will be subject to applicable law and to the terms of the corresponding providers.",
+          ],
+        },
+        {
+          title: "Contact form",
+          body: [
+            "Submitting the form does not create a contractual relationship or guarantee your participation in pilots, partnerships or investment rounds. You agree to share truthful information and not to send sensitive data. The processing of your data is governed by the Privacy notice.",
+          ],
+        },
+        {
+          title: "Acceptable use",
+          body: [
+            "Do not use the site for unlawful purposes, to send false information or unsolicited messages, or to attempt to compromise its security or operation.",
+          ],
+        },
+        {
+          title: "Intellectual property",
+          body: [
+            "The Arkha name, its logos, texts, designs and other content on this site belong to Arkha or to their respective owners and may not be used without prior written authorization.",
+          ],
+        },
+        {
+          title: "Limitation of liability",
+          body: [
+            "The site is provided “as is”. We strive to keep the information accurate and up to date, but we do not guarantee that it is error-free or that the site will operate without interruption.",
+          ],
+        },
+        {
+          title: "Changes to these terms",
+          body: ["We may update these terms at any time. The current version is the one published on this page."],
+        },
       ],
-      footnote: "Under active development at Karvo Studio",
     },
   },
 
   notFound: {
     title: "Page not found",
-    body: "The page you are looking for doesn’t exist or has moved.",
+    body: "The page you’re looking for doesn’t exist or has moved.",
     cta: "Back to home",
   },
 };
