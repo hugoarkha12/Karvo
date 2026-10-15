@@ -1,21 +1,23 @@
 import "server-only";
 import { createClient } from "@supabase/supabase-js";
-import type { LEAD_TABLES } from "./lead-fields";
+import type { LEAD_TABLE } from "./lead-fields";
+
+type Value = string | boolean | null;
 
 type LeadTable = {
   Row: Record<string, unknown>;
-  Insert: Record<string, string | null>;
-  Update: Record<string, string | null>;
+  Insert: Record<string, Value>;
+  Update: Record<string, Value>;
   Relationships: [];
 };
 
 /**
- * Esquema mínimo para supabase-js: qué tablas existen y que sus columnas son
- * texto. Las columnas concretas están en `supabase/migrations/`.
+ * Esquema mínimo para supabase-js: qué tablas existen y qué tipo de valores
+ * aceptan. Las columnas concretas están en `supabase/migrations/`.
  */
 type Database = {
   public: {
-    Tables: Record<(typeof LEAD_TABLES)[keyof typeof LEAD_TABLES], LeadTable>;
+    Tables: Record<typeof LEAD_TABLE, LeadTable>;
     Views: Record<string, never>;
     Functions: Record<string, never>;
   };
@@ -28,8 +30,8 @@ let client: ReturnType<typeof createClient<Database>> | undefined;
  * Row Level Security, por eso solo existe en el servidor: `server-only` rompe
  * el build si algún componente cliente llega a importar este archivo.
  *
- * Las tablas tienen RLS activo y sin políticas (ver `supabase/migrations/`):
- * con la llave pública nadie puede leerlas ni escribir en ellas.
+ * La tabla tiene RLS activo y sin políticas (ver `supabase/migrations/`): con
+ * la llave pública nadie puede leerla ni escribir en ella.
  */
 export function getSupabaseAdmin() {
   if (client) return client;

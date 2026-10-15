@@ -14,6 +14,7 @@ export function Field({
 }: {
   config: FieldConfig;
   label: string;
+  /** En un `select`, es el texto de la opción vacía inicial. */
   placeholder?: string;
   options?: string[];
   requiredHint: string;
@@ -37,21 +38,26 @@ export function Field({
           id={id}
           name={name}
           required={required}
-          rows={3}
+          rows={4}
+          maxLength={5000}
           placeholder={placeholder}
-          className={cn(control, "min-h-28 resize-y py-3.5 leading-[1.45]")}
+          className={cn(control, "min-h-32 resize-y py-3.5 leading-[1.45]")}
         />
       ) : as === "select" ? (
         <div className="relative">
+          {/* Empieza vacío: con `required`, el navegador no deja enviar sin elegir. */}
           <select
             id={id}
             name={name}
             required={required}
-            defaultValue={options?.[0]}
-            className={cn(control, "min-h-14 appearance-none pr-12")}
+            defaultValue=""
+            className={cn(control, "min-h-14 appearance-none pr-12 invalid:text-ink-muted")}
           >
+            <option value="" disabled>
+              {placeholder}
+            </option>
             {options?.map((option) => (
-              <option key={option} value={option}>
+              <option key={option} value={option} className="text-ink">
                 {option}
               </option>
             ))}
@@ -65,6 +71,7 @@ export function Field({
           type={type}
           required={required}
           autoComplete={autoComplete}
+          maxLength={300}
           placeholder={placeholder}
           className={cn(control, "min-h-14")}
         />
