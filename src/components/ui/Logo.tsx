@@ -1,44 +1,45 @@
 import { cn } from "@/lib/utils";
 
-/** Símbolo de Karvo: tres píldoras verticales, la central más alta. */
-export function KarvoSymbol({ className }: { className?: string }) {
+// Logos de Arkha vectorizados a partir de los archivos de marca (PNG). Usan
+// `currentColor`, así el mismo SVG sirve sobre fondo claro, oscuro o azul.
+
+/** Símbolo: una "Λ" de patas rectas con el vértice exterior redondeado. */
+export const ARKHA_SYMBOL_PATH =
+  "M0 92.8 45.53 2.75A5 5 0 0 1 54.47 2.75L100 92.8H80.08L50 28.53 19.92 92.8Z";
+
+export function ArkhaSymbol({ className }: { className?: string }) {
   return (
-    <svg viewBox="0 0 32 40" fill="currentColor" className={className} aria-hidden focusable={false}>
-      <rect x="1" y="10" width="6" height="20" rx="3" />
-      <rect x="13" y="2" width="6" height="36" rx="3" />
-      <rect x="25" y="10" width="6" height="20" rx="3" />
+    <svg viewBox="0 0 100 92.8" fill="currentColor" className={className} aria-hidden focusable={false}>
+      <path d={ARKHA_SYMBOL_PATH} />
     </svg>
   );
 }
 
-/** Wordmark K Λ R V O dibujado con trazos. */
-export function KarvoWordmark({ className }: { className?: string }) {
+/** Trazos del wordmark (viewBox 0 0 1258 186). */
+export const ARKHA_WORDMARK_PATHS = {
+  /** Contornos con hueco (las dos A y el ojo de la R): van con `evenodd`. */
+  outlined:
+    "M0 186 98.5 0h20L217 186h-27l-25.42-48H52.42L27 186Zm108.5-153.9L153.46 117H63.54ZM1041 186 1139.5 0h20L1258 186h-27l-25.42-48h-112.16L1068 186Zm108.5-153.9 44.96 84.9h-89.92ZM302 0h95a58 58 0 0 1 0 116h-95Zm25 22v72h70a36 36 0 0 0 0-72Z",
+  /** Astas, brazos y piernas. */
+  solid:
+    "M302 0h25v186h-25ZM362.2 100h31L466 186h-32ZM555 0h25v186h-25ZM680.5 0h34L567 141.8v-32.7ZM591.9 85.2 609.2 68.5 719.8 186h-33ZM807 0h25v186h-25ZM940 0h25v186h-25ZM807 86h158v23H807Z",
+};
+
+/** Wordmark A R K H A, con el espaciado amplio del original. */
+export function ArkhaWordmark({ className }: { className?: string }) {
   return (
-    <svg
-      viewBox="0 0 160 32"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={3.4}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={className}
-      aria-hidden
-      focusable={false}
-    >
-      <path d="M6 4V28M6 16.5L19 4M10 12.5L20 28" />
-      <path d="M32 28L44.5 4L57 28" />
-      <path d="M71 4V28M71 4H82.5C86.5 4 89.5 7 89.5 11C89.5 15 86.5 17.5 82.5 17.5H71M82 17.5L90.5 28" />
-      <path d="M104.5 4L117 28L129.5 4" />
-      <circle cx="147" cy="16" r="11.5" />
+    <svg viewBox="0 0 1258 186" fill="currentColor" className={className} aria-hidden focusable={false}>
+      <path fillRule="evenodd" d={ARKHA_WORDMARK_PATHS.outlined} />
+      <path d={ARKHA_WORDMARK_PATHS.solid} />
     </svg>
   );
 }
 
-export function KarvoLogo({ className }: { className?: string }) {
+export function ArkhaLogo({ className }: { className?: string }) {
   return (
-    <span className={cn("inline-flex items-center gap-2.5", className)}>
-      <KarvoSymbol className="h-[1.6em] w-auto" />
-      <KarvoWordmark className="h-[0.95em] w-auto" />
+    <span className={cn("inline-flex items-center gap-[0.6em]", className)}>
+      <ArkhaSymbol className="h-[1.15em] w-auto" />
+      <ArkhaWordmark className="h-[0.62em] w-auto" />
     </span>
   );
 }

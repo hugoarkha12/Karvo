@@ -1,7 +1,7 @@
 {
   "name": "karvo",
   "version": "1.0.0",
-  "description": "Landing de Karvo Venture Studio",
+  "description": "Landing de Arkha (infraestructura de pagos globales impulsada por IA)",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
