@@ -32,3 +32,16 @@ export function SectionHeader({
     </div>
   );
 }
+
+/** Párrafos de apoyo del encabezado. */
+export function SectionCopy({ paragraphs, tone = "light" }: { paragraphs: string[]; tone?: "light" | "dark" }) {
+  return paragraphs.map((paragraph) => (
+    <p
+      key={paragraph}
+      data-anim="copy"
+      className={cn("text-p-md", tone === "dark" ? "text-on-dark-soft" : "text-ink-soft")}
+    >
+      {paragraph}
+    </p>
+  ));
+}

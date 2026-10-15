@@ -1,16 +1,19 @@
 @import "tailwindcss";
 
 /* ==========================================================================
-   Karvo — design tokens
-   Sistema visual tomado de highalpha.com (fondo gris claro, tinta #171717,
-   titulares grandes en peso 400, radios de 6px, botones píldora) con el azul
-   de marca de Karvo como acento.
+   Arkha — design tokens
+   Mismo sistema visual que la landing de Karvo, tomado de highalpha.com
+   (tinta #171717, titulares grandes en peso 400, radios de 6px, botones
+   píldora), ajustado al documento de marca de Arkha: página predominantemente
+   blanca, azul solo en elementos interactivos (y en las ilustraciones) y
+   secciones oscuras estratégicas.
    ========================================================================== */
 
 @theme {
   /* Color */
-  --color-canvas: #f6f6f6;
-  --color-surface: #ffffff;
+  --color-canvas: #ffffff; /* fondo de la página */
+  --color-mist: #f6f6f6; /* paneles y secciones secundarias */
+  --color-surface: #ffffff; /* tarjetas sobre `mist` */
   --color-ink: #171717;
   --color-ink-soft: #171717c2; /* 76 % — texto secundario */
   --color-ink-muted: #17171799; /* 60 % — texto terciario */
@@ -61,52 +64,17 @@
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
 
-  --animate-glyph-bar: glyph-bar 2.4s var(--ease-in-out-quart) infinite;
-  --animate-glyph-orbit: glyph-orbit 4s var(--ease-in-out-quart) infinite;
-  --animate-glyph-dot: glyph-dot 2.4s ease-in-out infinite;
-  --animate-corridor-dot: corridor-dot 3.2s var(--ease-in-out-quart) infinite;
+  /* Onda que sale del nodo de Arkha en la ilustración del hero. */
+  --animate-hub-pulse: hub-pulse 3.2s var(--ease-out-expo) infinite;
 
-  @keyframes glyph-bar {
-    0%,
-    100% {
-      transform: scaleY(1);
-    }
-    50% {
-      transform: scaleY(0.5);
-    }
-  }
-
-  @keyframes glyph-orbit {
-    0%,
-    100% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(22%);
-    }
-  }
-
-  @keyframes glyph-dot {
-    0%,
-    100% {
-      opacity: 0.25;
-    }
-    35% {
-      opacity: 1;
-    }
-  }
-
-  @keyframes corridor-dot {
+  @keyframes hub-pulse {
     0% {
-      offset-distance: 0%;
-      opacity: 0;
+      transform: scale(1);
+      opacity: 0.7;
     }
-    10%,
-    90% {
-      opacity: 1;
-    }
+    70%,
     100% {
-      offset-distance: 100%;
+      transform: scale(2.1);
       opacity: 0;
     }
   }
@@ -124,8 +92,8 @@
 
 @layer base {
   html {
-    /* Altura del navbar sticky: los anclajes (#tesis, #ventures…) no quedan
-       escondidos debajo de él. */
+    /* Altura del navbar sticky: los anclajes (#plataforma, #contacto…) no
+       quedan escondidos debajo de él. */
     --nav-h: 4.5rem;
     scroll-padding-top: var(--nav-h);
     background-color: var(--color-canvas);
@@ -147,8 +115,7 @@
     }
   }
 
-  /* Bloquea el scroll del fondo con un diálogo o el menú móvil abiertos. */
-  html:has(dialog[open]),
+  /* Bloquea el scroll del fondo con el menú móvil abierto. */
   html[data-menu-open] {
     overflow: hidden;
   }
@@ -231,30 +198,6 @@
   from {
     opacity: 0;
     transform: translate3d(1.25rem, 0, 0);
-  }
-}
-
-/* Diálogo nativo: entrada suave del panel y del fondo. */
-@utility dialog-motion {
-  &[open] {
-    animation: dialog-in 0.5s var(--ease-out-expo);
-  }
-
-  &[open]::backdrop {
-    animation: backdrop-in 0.4s ease-out;
-  }
-}
-
-@keyframes dialog-in {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 1.5rem, 0);
-  }
-}
-
-@keyframes backdrop-in {
-  from {
-    opacity: 0;
   }
 }
 

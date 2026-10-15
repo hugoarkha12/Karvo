@@ -3,6 +3,7 @@ import { Container } from "./Container";
 
 const tones = {
   canvas: "bg-canvas text-ink",
+  mist: "bg-mist text-ink",
   dark: "bg-ink text-white",
 } as const;
 

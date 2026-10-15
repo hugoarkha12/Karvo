@@ -4,7 +4,7 @@ import { ArrowIcon } from "./Icons";
 const variants = {
   accent: "bg-accent text-white hover:bg-accent-strong",
   dark: "bg-ink text-white hover:bg-black",
-  light: "bg-surface text-ink hover:bg-canvas",
+  light: "bg-surface text-ink hover:bg-mist",
   outline: "border border-ink text-ink hover:bg-ink hover:text-white",
   "outline-light": "border border-white/60 text-white hover:bg-white hover:text-ink",
 } as const;

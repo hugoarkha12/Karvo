@@ -13,11 +13,14 @@ const NAMES: Record<Locale, string> = { es: "Español", en: "English" };
 export function LanguageSwitch({
   current,
   label,
+  path = "",
   tone = "dark",
   className,
 }: {
   current: Locale;
   label: string;
+  /** Ruta actual sin idioma (p. ej. `/privacidad`): se conserva al cambiar. */
+  path?: string;
   tone?: "dark" | "light";
   className?: string;
 }) {
@@ -33,7 +36,7 @@ export function LanguageSwitch({
               </span>
             )}
             <a
-              href={`/${locale}`}
+              href={`/${locale}${path}`}
               hrefLang={locale}
               lang={locale}
               aria-label={NAMES[locale]}

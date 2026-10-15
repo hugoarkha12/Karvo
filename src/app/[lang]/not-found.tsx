@@ -1,6 +1,6 @@
 import { getDictionary, getLocale } from "@/i18n/get-dictionary";
 import { Button } from "@/components/ui/Button";
-import { KarvoLogo } from "@/components/ui/Logo";
+import { ArkhaLogo } from "@/components/ui/Logo";
 
 export default async function NotFound() {
   const [locale, { notFound }] = await Promise.all([getLocale(), getDictionary()]);
@@ -8,7 +8,7 @@ export default async function NotFound() {
   return (
     <main className="flex min-h-svh flex-col justify-between px-gutter py-8">
       <a href={`/${locale}`} className="text-[1.375rem]">
-        <KarvoLogo />
+        <ArkhaLogo />
       </a>
       <div className="max-w-2xl">
         <p className="mb-6 text-eyebrow uppercase text-ink-soft">404</p>
