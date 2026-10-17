@@ -41,7 +41,6 @@ export const es = {
       { label: "Tecnología", href: "#tecnologia" },
       { label: "Casos de uso", href: "#casos-de-uso" },
       { label: "Nosotros", href: "#nosotros" },
-      { label: "Soluciones", href: "#soluciones" },
     ],
     primary: "Conviértete en socio de Arkha",
     secondary: "Contáctanos",
@@ -264,107 +263,6 @@ export const es = {
     ],
   },
 
-  // Apartado de servicios tecnológicos para empresas.
-  solutions: {
-    eyebrow: "Soluciones",
-    headline: "Soluciones tecnológicas para empresas que quieren avanzar",
-    body: [
-      "Ayudamos a las empresas a automatizar procesos, conectar sus sistemas y desarrollar soluciones de inteligencia artificial que convierten tareas manuales en operaciones más eficientes.",
-      "Diseñamos e implementamos tecnología adaptada a las necesidades de cada negocio, desde automatizaciones puntuales hasta sistemas de software completos.",
-    ],
-    tagline: "Menos trabajo manual. Más capacidad para crecer.",
-    primary: "Agenda una consulta",
-    secondary: "Explora nuestros servicios",
-    servicesTitle: "Nuestros servicios",
-    services: [
-      {
-        key: "automation",
-        title: "Automatización de procesos con IA",
-        desc: "Automatizamos tareas repetitivas para que tu equipo dedique menos tiempo a procesos manuales y más a actividades de valor.",
-        items: [
-          "Automatización de tareas administrativas y operativas.",
-          "Procesamiento de documentos y extracción de datos.",
-          "Clasificación de información y generación de reportes.",
-          "Flujos de trabajo automatizados entre herramientas.",
-          "Agentes de IA para ejecutar tareas específicas.",
-        ],
-      },
-      {
-        key: "agents",
-        title: "Agentes de IA para empresas",
-        desc: "Desarrollamos asistentes inteligentes que ayudan a los equipos a acceder a información, atender solicitudes y ejecutar tareas dentro de sus procesos de trabajo.",
-        items: [
-          "Asistentes empresariales conectados a documentos y bases de conocimiento.",
-          "Agentes para atención al cliente y soporte interno.",
-          "Automatización de seguimiento comercial.",
-          "Asistentes para ventas y operaciones.",
-          "Integración de modelos de IA en sistemas existentes.",
-        ],
-      },
-      {
-        key: "software",
-        title: "Desarrollo de software a medida",
-        desc: "Convertimos necesidades empresariales en productos digitales diseñados para resolver problemas reales.",
-        items: [
-          "Aplicaciones web y plataformas empresariales.",
-          "Portales para clientes y proveedores.",
-          "Paneles administrativos y sistemas internos.",
-          "MVP para startups y nuevos productos digitales.",
-          "Desarrollo de APIs y servicios backend.",
-        ],
-      },
-      {
-        key: "integrations",
-        title: "Integración de sistemas y APIs",
-        desc: "Conectamos las herramientas que tu empresa ya utiliza para reducir la duplicación de información y mejorar el flujo de trabajo entre sistemas.",
-        items: [
-          "Integración de CRM, ERP y plataformas comerciales.",
-          "Conexiones entre aplicaciones mediante APIs.",
-          "Sincronización de datos entre sistemas.",
-          "Automatización de procesos entre múltiples herramientas.",
-          "Integración de servicios de terceros.",
-        ],
-      },
-      {
-        key: "sales",
-        title: "Automatización comercial y atención al cliente",
-        desc: "Ayudamos a los equipos comerciales a responder más rápido, organizar sus oportunidades y mantener un seguimiento consistente.",
-        items: [
-          "Captura y clasificación de prospectos.",
-          "Seguimientos automatizados por correo y otros canales compatibles.",
-          "Asignación y actualización de oportunidades en el CRM.",
-          "Automatización de agendas y recordatorios.",
-          "Reportes de actividad y rendimiento comercial.",
-        ],
-      },
-      {
-        key: "consulting",
-        title: "Consultoría e implementación de IA",
-        desc: "Identificamos oportunidades reales para aplicar inteligencia artificial y acompañamos su implementación, desde la evaluación inicial hasta la puesta en producción.",
-        items: [
-          "Diagnóstico de procesos y oportunidades de automatización.",
-          "Diseño de soluciones de IA.",
-          "Selección e integración de herramientas tecnológicas.",
-          "Desarrollo de pruebas de concepto.",
-          "Implementación, evaluación y mejora de soluciones.",
-        ],
-      },
-    ],
-    processTitle: "Cómo trabajamos",
-    process: [
-      { title: "Entendemos el problema.", desc: "Analizamos tus procesos, herramientas y objetivos." },
-      { title: "Diseñamos la solución.", desc: "Definimos el alcance, la tecnología y los resultados que se medirán." },
-      { title: "Desarrollamos e integramos.", desc: "Construimos la solución y la conectamos con tus sistemas." },
-      { title: "Medimos y mejoramos.", desc: "Evaluamos el funcionamiento y optimizamos la implementación." },
-    ],
-    cta: {
-      headline: "¿Tienes un proceso que debería funcionar mejor?",
-      body: "Cuéntanos qué necesita tu empresa. Evaluaremos el problema y te propondremos una solución tecnológica acorde con tus objetivos.",
-      button: "Hablemos de tu proyecto",
-      note: "Cada proyecto se define según su alcance, viabilidad técnica y objetivos. Las funcionalidades, integraciones y resultados se acuerdan antes de comenzar.",
-    },
-  },
-
   partners: {
     eyebrow: "Construye con nosotros",
     headline: "Ayúdanos a construir el futuro de los pagos internacionales.",
@@ -495,7 +393,6 @@ export const es = {
       { label: "Tecnología", href: "#tecnologia" },
       { label: "Casos de uso", href: "#casos-de-uso" },
       { label: "Nosotros", href: "#nosotros" },
-      { label: "Soluciones", href: "#soluciones" },
       { label: "Contacto", href: "#contacto" },
     ],
     legalTitle: "Legal",

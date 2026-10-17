@@ -18,7 +18,7 @@ export function Partners({
   newTabLabel: string;
 }) {
   return (
-    <Section id="contacto">
+    <Section id="contacto" tone="mist">
       <div className="grid gap-12 lg:grid-cols-12 lg:gap-12">
         <div className="lg:col-span-5 lg:pt-6">
           <div className="lg:sticky lg:top-[calc(var(--nav-h)+2rem)]">
@@ -32,7 +32,7 @@ export function Partners({
             <ul data-anim="stagger" className="mt-8 flex flex-wrap gap-2">
               {copy.audience.map((item) => (
                 <li key={item}>
-                  <Tag variant="soft" className="px-4 py-3 text-p-sm">
+                  <Tag variant="white" className="px-4 py-3 text-p-sm">
                     {item}
                   </Tag>
                 </li>
@@ -41,7 +41,7 @@ export function Partners({
           </div>
         </div>
 
-        <div data-anim="fade" className="rounded-card border border-line bg-surface lg:col-span-7">
+        <div data-anim="fade" className="rounded-card bg-surface lg:col-span-7">
           <PartnerForm locale={locale} copy={form} privacyHref={`/${locale}/privacidad`} newTabLabel={newTabLabel} />
         </div>
       </div>
