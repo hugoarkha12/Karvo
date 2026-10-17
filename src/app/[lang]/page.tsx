@@ -10,6 +10,7 @@ import { Technology } from "@/components/sections/Technology";
 import { Market } from "@/components/sections/Market";
 import { Vision } from "@/components/sections/Vision";
 import { WhyArkha } from "@/components/sections/WhyArkha";
+import { Solutions } from "@/components/sections/Solutions";
 import { Partners } from "@/components/sections/Partners";
 import { Investors } from "@/components/sections/Investors";
 import { Faq } from "@/components/sections/Faq";
@@ -37,6 +38,7 @@ export default async function HomePage() {
         <Market copy={dict.market} />
         <Vision copy={dict.vision} />
         <WhyArkha copy={dict.why} />
+        <Solutions copy={dict.solutions} />
         <Partners locale={locale} copy={dict.partners} form={dict.form} newTabLabel={dict.common.newTab} />
         <Investors copy={dict.investors} />
         <Faq copy={dict.faq} />
