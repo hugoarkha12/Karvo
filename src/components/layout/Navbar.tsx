@@ -40,11 +40,11 @@ export function Navbar({
           <KarvoLogo />
         </a>
 
-        <nav aria-label="Principal" className="hidden items-center gap-8 lg:flex xl:gap-10">
-          <ul className="flex items-center gap-7 text-[1.0625rem] xl:gap-9 xl:text-[1.125rem]">
+        <nav aria-label="Principal" className="hidden items-center gap-6 lg:flex xl:gap-10">
+          <ul className="flex items-center gap-4 text-[1rem] xl:gap-9 xl:text-[1.125rem]">
             {nav.links.map((link) => (
               <li key={link.href}>
-                <a href={link.href} className="link-underline">
+                <a href={link.href} className="link-underline whitespace-nowrap">
                   {link.label}
                 </a>
               </li>
