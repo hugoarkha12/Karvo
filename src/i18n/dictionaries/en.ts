@@ -4,7 +4,7 @@ export const en: Dictionary = {
   meta: {
     title: "Karvo — Building the companies of the future",
     description:
-      "Karvo is a venture studio that uses artificial intelligence, technology, capital and talent to discover opportunities and build high-potential companies in Latin America.",
+      "Karvo is a venture studio that uses artificial intelligence, technology, capital and talent to discover opportunities and build high-potential companies in Latin America. We also build software and implement AI for businesses.",
     ogDescription:
       "Karvo is a venture studio that discovers opportunities, engineers technology, and builds companies designed for next-generation markets.",
     keywords: [
@@ -14,6 +14,9 @@ export const en: Dictionary = {
       "Latin America",
       "Tijuana",
       "Artificial Intelligence",
+      "Software development",
+      "AI automation",
+      "AI agents",
       "Startups",
       "Arkha",
     ],
@@ -37,6 +40,7 @@ export const en: Dictionary = {
       { label: "How we build", href: "#como-construimos" },
       { label: "Ventures", href: "#ventures" },
       { label: "Karvo AI", href: "#karvo-ai" },
+      { label: "Solutions", href: "#soluciones" },
       { label: "Enterprises", href: "#empresas" },
     ],
     cta: "Build",
@@ -67,6 +71,12 @@ export const en: Dictionary = {
         title: "Karvo AI",
         desc: "We bring AI to real businesses and turn their friction into new companies.",
         href: "#karvo-ai",
+      },
+      {
+        key: "solutions",
+        title: "Solutions",
+        desc: "We automate processes and build AI-powered software for your company.",
+        href: "#soluciones",
       },
     ],
   },
@@ -104,8 +114,6 @@ export const en: Dictionary = {
     equation: ["Venture Studio", "AI", "Technology", "Capital", "Network"],
     notTitle: "What we are not",
     notList: [
-      "A consultancy",
-      "An AI agency",
       "A traditional accelerator",
       "A school",
       "A traditional VC",
@@ -237,8 +245,117 @@ export const en: Dictionary = {
       { name: "Opportunity", desc: "Cross-industry market size & economic validation." },
       { name: "New company", desc: "Engineering and spinning out a standalone software venture." },
     ],
-    note: "We are not an agency and we don’t bill consulting hours. We design solutions to real friction and turn them into independent companies.",
+    note: "We implement solutions to real friction and, when a problem repeats across companies, we turn it into an independent company.",
     cta: "Explore Karvo AI",
+  },
+
+  solutions: {
+    eyebrow: "Solutions",
+    headline: "Technology solutions for companies ready to move forward",
+    body: [
+      "We help companies automate processes, connect their systems and build artificial intelligence solutions that turn manual tasks into more efficient operations.",
+      "We design and implement technology tailored to each business’s needs, from targeted automations to complete software systems.",
+    ],
+    tagline: "Less manual work. More capacity to grow.",
+    primary: "Book a consultation",
+    secondary: "Explore our services",
+    flow: {
+      caption: "Illustrative example of an AI automation",
+      steps: [
+        "A request, invoice or document comes in",
+        "AI extracts and classifies the information",
+        "Your team reviews and approves",
+        "It’s recorded in your CRM or ERP",
+      ],
+    },
+    servicesTitle: "Our services",
+    services: [
+      {
+        key: "automation",
+        title: "AI process automation",
+        desc: "We automate repetitive tasks so your team spends less time on manual processes and more on high-value work.",
+        items: [
+          "Automation of administrative and operational tasks.",
+          "Document processing and data extraction.",
+          "Information classification and report generation.",
+          "Automated workflows across tools.",
+          "AI agents that carry out specific tasks.",
+        ],
+      },
+      {
+        key: "agents",
+        title: "AI agents for business",
+        desc: "We build intelligent assistants that help teams access information, handle requests and carry out tasks within their workflows.",
+        items: [
+          "Business assistants connected to documents and knowledge bases.",
+          "Agents for customer service and internal support.",
+          "Sales follow-up automation.",
+          "Assistants for sales and operations.",
+          "Integration of AI models into existing systems.",
+        ],
+      },
+      {
+        key: "software",
+        title: "Custom software development",
+        desc: "We turn business needs into digital products designed to solve real problems.",
+        items: [
+          "Web applications and business platforms.",
+          "Customer and supplier portals.",
+          "Admin dashboards and internal systems.",
+          "MVPs for startups and new digital products.",
+          "API and backend service development.",
+        ],
+      },
+      {
+        key: "integrations",
+        title: "Systems and API integration",
+        desc: "We connect the tools your company already uses to reduce duplicated information and improve the workflow between systems.",
+        items: [
+          "CRM, ERP and commerce platform integration.",
+          "Connections between applications through APIs.",
+          "Data synchronization across systems.",
+          "Process automation across multiple tools.",
+          "Third-party service integration.",
+        ],
+      },
+      {
+        key: "sales",
+        title: "Sales and customer service automation",
+        desc: "We help sales teams respond faster, organize their opportunities and keep follow-up consistent.",
+        items: [
+          "Lead capture and classification.",
+          "Automated follow-ups by email and other supported channels.",
+          "Opportunity assignment and updates in the CRM.",
+          "Scheduling and reminder automation.",
+          "Sales activity and performance reports.",
+        ],
+      },
+      {
+        key: "consulting",
+        title: "AI consulting and implementation",
+        desc: "We identify real opportunities to apply artificial intelligence and support their implementation, from the initial assessment to production.",
+        items: [
+          "Assessment of processes and automation opportunities.",
+          "AI solution design.",
+          "Selection and integration of technology tools.",
+          "Proof-of-concept development.",
+          "Implementation, evaluation and improvement of solutions.",
+        ],
+      },
+    ],
+    processTitle: "How we work",
+    process: [
+      { title: "We understand the problem.", desc: "We analyze your processes, tools and goals." },
+      { title: "We design the solution.", desc: "We define the scope, the technology and the results to be measured." },
+      { title: "We build and integrate.", desc: "We build the solution and connect it to your systems." },
+      { title: "We measure and improve.", desc: "We evaluate how it performs and optimize the implementation." },
+    ],
+    cta: {
+      headline: "Do you have a process that should work better?",
+      body: "Tell us what your company needs. We’ll assess the problem and propose a technology solution aligned with your goals.",
+      button: "Let’s talk about your project",
+      note: "Each project is defined by its scope, technical feasibility and goals. Features, integrations and results are agreed on before we start.",
+    },
   },
 
   ventures: {
@@ -384,6 +501,7 @@ export const en: Dictionary = {
       "Spinout software product identification",
     ],
     cta: "Diagnose my company",
+    servicesLink: "Explore our services",
   },
 
   finalCta: {
@@ -405,6 +523,7 @@ export const en: Dictionary = {
           { label: "How we build", href: "#como-construimos" },
           { label: "Artificial intelligence", href: "#ia" },
           { label: "Two ways of building", href: "#modelos" },
+          { label: "Solutions", href: "#soluciones" },
         ],
       },
       {

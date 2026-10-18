@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-export type GlyphKind = "studio" | "ventures" | "ai";
+export type GlyphKind = "studio" | "ventures" | "ai" | "solutions";
 
 const bar = "origin-center animate-glyph-bar [transform-box:fill-box]";
 
@@ -39,6 +39,20 @@ export function CardGlyph({ kind, className }: { kind: GlyphKind; className?: st
             />
           )),
         )}
+
+      {kind === "solutions" && (
+        <>
+          <path
+            d="M26 22 8 40l18 18M54 22l18 18-18 18"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="4.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <rect className="animate-glyph-dot" x="35" y="28" width="10" height="24" rx="2" />
+        </>
+      )}
     </svg>
   );
 }

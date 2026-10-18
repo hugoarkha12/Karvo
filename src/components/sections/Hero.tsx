@@ -26,7 +26,7 @@ export function Hero({ copy }: { copy: Dictionary["hero"] }) {
           </p>
         </div>
 
-        <ul className="grid gap-3 md:grid-cols-3 md:gap-5">
+        <ul className="grid gap-3 sm:grid-cols-2 md:gap-5 xl:grid-cols-4">
           {copy.cards.map((card, index) => (
             <li key={card.key} className="intro-slide" style={delay(0.45 + index * 0.1)}>
               <a
@@ -35,12 +35,12 @@ export function Hero({ copy }: { copy: Dictionary["hero"] }) {
               >
                 <CardGlyph
                   kind={card.key as GlyphKind}
-                  className="absolute top-6 right-6 hidden size-20 text-white/35 transition-colors duration-300 group-hover:text-white lg:top-8 lg:right-8 lg:block"
+                  className="absolute top-6 right-6 hidden size-20 text-white/35 transition-colors duration-300 group-hover:text-white lg:top-8 lg:right-8 lg:block xl:size-16"
                 />
                 <div className="max-w-[22rem]">
                   <div className="mb-3 flex items-center gap-3">
-                    <h2 className="text-h3">{card.title}</h2>
-                    <ArrowIcon className="w-8 shrink-0 transition-transform duration-500 ease-out-expo group-hover:translate-x-2 lg:w-9" />
+                    <h2 className="text-h3 xl:text-[1.625rem]">{card.title}</h2>
+                    <ArrowIcon className="w-8 shrink-0 transition-transform duration-500 ease-out-expo group-hover:translate-x-2 lg:w-9 xl:w-7" />
                   </div>
                   <p className="text-p-sm text-on-dark-soft">{card.desc}</p>
                 </div>

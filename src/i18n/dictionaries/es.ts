@@ -6,7 +6,7 @@ export const es = {
   meta: {
     title: "Karvo — Construimos las empresas del futuro",
     description:
-      "Karvo es un venture studio que utiliza inteligencia artificial, tecnología, capital y talento para descubrir oportunidades y construir compañías de alto potencial en Latinoamérica.",
+      "Karvo es un venture studio que utiliza inteligencia artificial, tecnología, capital y talento para descubrir oportunidades y construir compañías de alto potencial en Latinoamérica. También desarrollamos software e implementamos IA para empresas.",
     ogDescription:
       "Karvo es un venture studio que descubre oportunidades, construye tecnología y crea compañías diseñadas para los mercados de la próxima generación.",
     keywords: [
@@ -16,6 +16,9 @@ export const es = {
       "Latinoamérica",
       "Tijuana",
       "Inteligencia Artificial",
+      "Desarrollo de software",
+      "Automatización con IA",
+      "Agentes de IA",
       "Startups",
       "Arkha",
     ],
@@ -39,6 +42,7 @@ export const es = {
       { label: "Cómo construimos", href: "#como-construimos" },
       { label: "Ventures", href: "#ventures" },
       { label: "Karvo AI", href: "#karvo-ai" },
+      { label: "Soluciones", href: "#soluciones" },
       { label: "Empresas", href: "#empresas" },
     ],
     cta: "Construir",
@@ -69,6 +73,12 @@ export const es = {
         title: "Karvo AI",
         desc: "Llevamos la IA a empresas reales y convertimos sus fricciones en nuevas compañías.",
         href: "#karvo-ai",
+      },
+      {
+        key: "solutions",
+        title: "Soluciones",
+        desc: "Automatizamos procesos y desarrollamos software con IA para tu empresa.",
+        href: "#soluciones",
       },
     ],
   },
@@ -106,8 +116,6 @@ export const es = {
     equation: ["Venture Studio", "AI", "Tecnología", "Capital", "Network"],
     notTitle: "Qué no somos",
     notList: [
-      "Una consultora",
-      "Una agencia de IA",
       "Una aceleradora tradicional",
       "Una escuela",
       "Un VC tradicional",
@@ -239,8 +247,119 @@ export const es = {
       { name: "Oportunidad", desc: "Validación de mercado multi-empresa e impacto económico." },
       { name: "Nueva compañía", desc: "Desarrollo y spinout de una solución tecnológica escalable." },
     ],
-    note: "No somos una agencia ni cobramos horas de consultoría. Diseñamos soluciones que resuelven fricciones reales y las convertimos en compañías independientes.",
+    note: "Implementamos soluciones que resuelven fricciones reales y, cuando un problema se repite en varias empresas, lo convertimos en una compañía independiente.",
     cta: "Explora Karvo AI",
+  },
+
+  // Apartado de servicios tecnológicos para empresas (#soluciones).
+  solutions: {
+    eyebrow: "Soluciones",
+    headline: "Soluciones tecnológicas para empresas que quieren avanzar",
+    body: [
+      "Ayudamos a las empresas a automatizar procesos, conectar sus sistemas y desarrollar soluciones de inteligencia artificial que convierten tareas manuales en operaciones más eficientes.",
+      "Diseñamos e implementamos tecnología adaptada a las necesidades de cada negocio, desde automatizaciones puntuales hasta sistemas de software completos.",
+    ],
+    tagline: "Menos trabajo manual. Más capacidad para crecer.",
+    primary: "Agenda una consulta",
+    secondary: "Explora nuestros servicios",
+    // Ilustración: una automatización típica, con revisión humana.
+    flow: {
+      caption: "Ejemplo ilustrativo de una automatización con IA",
+      steps: [
+        "Llega una solicitud, factura o documento",
+        "La IA extrae y clasifica la información",
+        "Tu equipo revisa y aprueba",
+        "Se registra en tu CRM o ERP",
+      ],
+    },
+    servicesTitle: "Nuestros servicios",
+    services: [
+      {
+        key: "automation",
+        title: "Automatización de procesos con IA",
+        desc: "Automatizamos tareas repetitivas para que tu equipo dedique menos tiempo a procesos manuales y más a actividades de valor.",
+        items: [
+          "Automatización de tareas administrativas y operativas.",
+          "Procesamiento de documentos y extracción de datos.",
+          "Clasificación de información y generación de reportes.",
+          "Flujos de trabajo automatizados entre herramientas.",
+          "Agentes de IA para ejecutar tareas específicas.",
+        ],
+      },
+      {
+        key: "agents",
+        title: "Agentes de IA para empresas",
+        desc: "Desarrollamos asistentes inteligentes que ayudan a los equipos a acceder a información, atender solicitudes y ejecutar tareas dentro de sus procesos de trabajo.",
+        items: [
+          "Asistentes empresariales conectados a documentos y bases de conocimiento.",
+          "Agentes para atención al cliente y soporte interno.",
+          "Automatización de seguimiento comercial.",
+          "Asistentes para ventas y operaciones.",
+          "Integración de modelos de IA en sistemas existentes.",
+        ],
+      },
+      {
+        key: "software",
+        title: "Desarrollo de software a medida",
+        desc: "Convertimos necesidades empresariales en productos digitales diseñados para resolver problemas reales.",
+        items: [
+          "Aplicaciones web y plataformas empresariales.",
+          "Portales para clientes y proveedores.",
+          "Paneles administrativos y sistemas internos.",
+          "MVP para startups y nuevos productos digitales.",
+          "Desarrollo de APIs y servicios backend.",
+        ],
+      },
+      {
+        key: "integrations",
+        title: "Integración de sistemas y APIs",
+        desc: "Conectamos las herramientas que tu empresa ya utiliza para reducir la duplicación de información y mejorar el flujo de trabajo entre sistemas.",
+        items: [
+          "Integración de CRM, ERP y plataformas comerciales.",
+          "Conexiones entre aplicaciones mediante APIs.",
+          "Sincronización de datos entre sistemas.",
+          "Automatización de procesos entre múltiples herramientas.",
+          "Integración de servicios de terceros.",
+        ],
+      },
+      {
+        key: "sales",
+        title: "Automatización comercial y atención al cliente",
+        desc: "Ayudamos a los equipos comerciales a responder más rápido, organizar sus oportunidades y mantener un seguimiento consistente.",
+        items: [
+          "Captura y clasificación de prospectos.",
+          "Seguimientos automatizados por correo y otros canales compatibles.",
+          "Asignación y actualización de oportunidades en el CRM.",
+          "Automatización de agendas y recordatorios.",
+          "Reportes de actividad y rendimiento comercial.",
+        ],
+      },
+      {
+        key: "consulting",
+        title: "Consultoría e implementación de IA",
+        desc: "Identificamos oportunidades reales para aplicar inteligencia artificial y acompañamos su implementación, desde la evaluación inicial hasta la puesta en producción.",
+        items: [
+          "Diagnóstico de procesos y oportunidades de automatización.",
+          "Diseño de soluciones de IA.",
+          "Selección e integración de herramientas tecnológicas.",
+          "Desarrollo de pruebas de concepto.",
+          "Implementación, evaluación y mejora de soluciones.",
+        ],
+      },
+    ],
+    processTitle: "Cómo trabajamos",
+    process: [
+      { title: "Entendemos el problema.", desc: "Analizamos tus procesos, herramientas y objetivos." },
+      { title: "Diseñamos la solución.", desc: "Definimos el alcance, la tecnología y los resultados que se medirán." },
+      { title: "Desarrollamos e integramos.", desc: "Construimos la solución y la conectamos con tus sistemas." },
+      { title: "Medimos y mejoramos.", desc: "Evaluamos el funcionamiento y optimizamos la implementación." },
+    ],
+    cta: {
+      headline: "¿Tienes un proceso que debería funcionar mejor?",
+      body: "Cuéntanos qué necesita tu empresa. Evaluaremos el problema y te propondremos una solución tecnológica acorde con tus objetivos.",
+      button: "Hablemos de tu proyecto",
+      note: "Cada proyecto se define según su alcance, viabilidad técnica y objetivos. Las funcionalidades, integraciones y resultados se acuerdan antes de comenzar.",
+    },
   },
 
   ventures: {
@@ -386,6 +505,7 @@ export const es = {
       "Detección de productos de software derivados",
     ],
     cta: "Diagnosticar mi empresa",
+    servicesLink: "Explora nuestros servicios",
   },
 
   finalCta: {
@@ -407,6 +527,7 @@ export const es = {
           { label: "Cómo construimos", href: "#como-construimos" },
           { label: "Inteligencia artificial", href: "#ia" },
           { label: "Modelos de trabajo", href: "#modelos" },
+          { label: "Soluciones", href: "#soluciones" },
         ],
       },
       {

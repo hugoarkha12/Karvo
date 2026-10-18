@@ -65,6 +65,7 @@
   --animate-glyph-orbit: glyph-orbit 4s var(--ease-in-out-quart) infinite;
   --animate-glyph-dot: glyph-dot 2.4s ease-in-out infinite;
   --animate-corridor-dot: corridor-dot 3.2s var(--ease-in-out-quart) infinite;
+  --animate-flow-dot: flow-dot 3.6s var(--ease-in-out-quart) infinite;
 
   @keyframes glyph-bar {
     0%,
@@ -93,6 +94,25 @@
     }
     35% {
       opacity: 1;
+    }
+  }
+
+  /* Pulso que baja por los pasos de la ilustración de Soluciones. Recorre su
+     tramo en el primer tercio del ciclo; con retrasos de 1/3 de ciclo entre
+     tramos, el pulso parece bajar de un paso al siguiente. */
+  @keyframes flow-dot {
+    0% {
+      top: 0%;
+      opacity: 0;
+    }
+    4%,
+    29% {
+      opacity: 1;
+    }
+    33.333%,
+    100% {
+      top: 100%;
+      opacity: 0;
     }
   }
 

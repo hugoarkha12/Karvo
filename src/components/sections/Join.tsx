@@ -84,9 +84,14 @@ export function Join({
           body={companies.body}
           items={companies.pills}
           footer={
-            <ModalTrigger modal="diagnostic" variant="light">
-              {companies.cta}
-            </ModalTrigger>
+            <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:gap-8">
+              <ModalTrigger modal="diagnostic" variant="light">
+                {companies.cta}
+              </ModalTrigger>
+              <a href="#servicios" className="link-underline text-p-sm">
+                {companies.servicesLink}
+              </a>
+            </div>
           }
         />
       </Container>
