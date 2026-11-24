@@ -11,7 +11,7 @@ export function ArkhaSymbol({ className }: { className?: string }) {
   );
 }
 
-/** Wordmark K Λ R V O dibujado con trazos. */
+/** Wordmark A R K H A dibujado con trazos. */
 export function ArkhaWordmark({ className }: { className?: string }) {
   return (
     <svg
@@ -25,11 +25,11 @@ export function ArkhaWordmark({ className }: { className?: string }) {
       aria-hidden
       focusable={false}
     >
-      <path d="M6 4V28M6 16.5L19 4M10 12.5L20 28" />
-      <path d="M32 28L44.5 4L57 28" />
-      <path d="M71 4V28M71 4H82.5C86.5 4 89.5 7 89.5 11C89.5 15 86.5 17.5 82.5 17.5H71M82 17.5L90.5 28" />
-      <path d="M104.5 4L117 28L129.5 4" />
-      <circle cx="147" cy="16" r="11.5" />
+      <path d="M6 28L18.5 4L31 28M11 19H26" />
+      <path d="M45 4V28M45 4H56.5C60.5 4 63.5 7 63.5 11C63.5 15 60.5 17.5 56.5 17.5H45M56 17.5L64.5 28" />
+      <path d="M78 4V28M78 16.5L91 4M82 12.5L92 28" />
+      <path d="M106 4V28M122 4V28M106 16H122" />
+      <path d="M134 28L146 4L158 28M139 19H153" />
     </svg>
   );
 }
