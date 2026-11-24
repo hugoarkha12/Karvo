@@ -11,7 +11,7 @@ import { ArkhaDetails } from "./ArkhaDetails";
 export type ModalName = "founder" | "diagnostic" | "arkha";
 
 /**
- * Enlaces profundos: `karvo.com/es#apply` abre directo la aplicación. Sirve
+ * Enlaces profundos: `arkha.lat/es#apply` abre directo la aplicación. Sirve
  * para compartir el formulario en correos o redes.
  */
 const HASH_TO_MODAL: Record<string, ModalName> = {
