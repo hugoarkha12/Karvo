@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
-/** Símbolo de Karvo: tres píldoras verticales, la central más alta. */
-export function KarvoSymbol({ className }: { className?: string }) {
+/** Símbolo de Arkha: tres píldoras verticales, la central más alta. */
+export function ArkhaSymbol({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 32 40" fill="currentColor" className={className} aria-hidden focusable={false}>
       <rect x="1" y="10" width="6" height="20" rx="3" />
@@ -12,7 +12,7 @@ export function KarvoSymbol({ className }: { className?: string }) {
 }
 
 /** Wordmark K Λ R V O dibujado con trazos. */
-export function KarvoWordmark({ className }: { className?: string }) {
+export function ArkhaWordmark({ className }: { className?: string }) {
   return (
     <svg
       viewBox="0 0 160 32"
@@ -34,11 +34,11 @@ export function KarvoWordmark({ className }: { className?: string }) {
   );
 }
 
-export function KarvoLogo({ className }: { className?: string }) {
+export function ArkhaLogo({ className }: { className?: string }) {
   return (
     <span className={cn("inline-flex items-center gap-2.5", className)}>
-      <KarvoSymbol className="h-[1.6em] w-auto" />
-      <KarvoWordmark className="h-[0.95em] w-auto" />
+      <ArkhaSymbol className="h-[1.6em] w-auto" />
+      <ArkhaWordmark className="h-[0.95em] w-auto" />
     </span>
   );
 }

@@ -4,11 +4,11 @@ import { Section } from "@/components/ui/Section";
 import { ModalTrigger } from "@/components/modals/ModalTrigger";
 import { SectionHeader } from "./SectionHeader";
 
-export function KarvoAI({ copy }: { copy: Dictionary["karvoAi"] }) {
+export function ArkhaAI({ copy }: { copy: Dictionary["arkhaAi"] }) {
   const last = copy.flow.length - 1;
 
   return (
-    <Section id="karvo-ai">
+    <Section id="arkha-ai">
       <SectionHeader
         eyebrow={copy.eyebrow}
         headline={copy.headline}

@@ -2,13 +2,13 @@ import type { Dictionary } from "./es";
 
 export const en: Dictionary = {
   meta: {
-    title: "Karvo — Building the companies of the future",
+    title: "Arkha — Building the companies of the future",
     description:
-      "Karvo is a venture studio that uses artificial intelligence, technology, capital and talent to discover opportunities and build high-potential companies in Latin America. We also build software and implement AI for businesses.",
+      "Arkha is a venture studio that uses artificial intelligence, technology, capital and talent to discover opportunities and build high-potential companies in Latin America. We also build software and implement AI for businesses.",
     ogDescription:
-      "Karvo is a venture studio that discovers opportunities, engineers technology, and builds companies designed for next-generation markets.",
+      "Arkha is a venture studio that discovers opportunities, engineers technology, and builds companies designed for next-generation markets.",
     keywords: [
-      "Karvo",
+      "Arkha",
       "Venture Studio",
       "Mexico",
       "Latin America",
@@ -30,7 +30,7 @@ export const en: Dictionary = {
     closeMenu: "Close menu",
     language: "Language",
     skipToContent: "Skip to content",
-    home: "Karvo, home",
+    home: "Arkha, home",
     backToTop: "Back to top",
   },
 
@@ -39,12 +39,12 @@ export const en: Dictionary = {
       { label: "Thesis", href: "#tesis" },
       { label: "How we build", href: "#como-construimos" },
       { label: "Ventures", href: "#ventures" },
-      { label: "Karvo AI", href: "#karvo-ai" },
+      { label: "Arkha AI", href: "#arkha-ai" },
       { label: "Solutions", href: "#soluciones" },
       { label: "Enterprises", href: "#empresas" },
     ],
     cta: "Build",
-    mobileCta: "Build with Karvo",
+    mobileCta: "Build with Arkha",
   },
 
   hero: {
@@ -52,25 +52,25 @@ export const en: Dictionary = {
     line1: "Building the companies",
     line2: "of the future.",
     subheadline:
-      "Karvo is a venture studio that discovers opportunities, engineers technology, and builds companies designed for next-generation markets.",
+      "Arkha is a venture studio that discovers opportunities, engineers technology, and builds companies designed for next-generation markets.",
     cards: [
       {
         key: "studio",
-        title: "Karvo Studio",
+        title: "Arkha Studio",
         desc: "We identify opportunities and build companies from day zero.",
         href: "#studio",
       },
       {
         key: "ventures",
-        title: "Karvo Ventures",
+        title: "Arkha Ventures",
         desc: "We build alongside exceptional founders with technology, AI and capital.",
-        href: "#karvo-ventures",
+        href: "#arkha-ventures",
       },
       {
         key: "ai",
-        title: "Karvo AI",
+        title: "Arkha AI",
         desc: "We bring AI to real businesses and turn their friction into new companies.",
-        href: "#karvo-ai",
+        href: "#arkha-ai",
       },
       {
         key: "solutions",
@@ -109,8 +109,8 @@ export const en: Dictionary = {
       },
     ],
     conclusion:
-      "Karvo combines technology, talent, capital, and market intelligence to transform real opportunities into enduring companies.",
-    equationTitle: "Karvo is the convergence of",
+      "Arkha combines technology, talent, capital, and market intelligence to transform real opportunities into enduring companies.",
+    equationTitle: "Arkha is the convergence of",
     equation: ["Venture Studio", "AI", "Technology", "Capital", "Network"],
     notTitle: "What we are not",
     notList: [
@@ -161,7 +161,7 @@ export const en: Dictionary = {
       "AI is radically reshaping the economics of building a company.",
       "It enables faster research, product engineering with leaner teams, automated operations, and experimentation at an unprecedented velocity.",
     ],
-    realityNote: "Karvo is engineered around this new reality.",
+    realityNote: "Arkha is engineered around this new reality.",
     vectors: [
       {
         title: "Research",
@@ -204,7 +204,7 @@ export const en: Dictionary = {
       "We engineered two complementary models to catalyze and build exceptional technology companies.",
     studio: {
       badge: "In-house incubation",
-      title: "Karvo Studio",
+      title: "Arkha Studio",
       subhead: "We build from day zero.",
       desc: "We identify opportunities, validate markets, and engineer new companies from the ground up.",
       cta: "See how we build",
@@ -217,10 +217,10 @@ export const en: Dictionary = {
     },
     ventures: {
       badge: "Co-building with founders",
-      title: "Karvo Ventures",
+      title: "Arkha Ventures",
       subhead: "We build alongside exceptional founders.",
       desc: "We partner with ambitious entrepreneurs, injecting technology, AI, capital, strategy, and network to build extraordinary companies.",
-      cta: "Apply to Karvo",
+      cta: "Apply to Arkha",
       highlights: [
         "Hands-on co-building with top founders",
         "Direct injection of AI & engineering horsepower",
@@ -230,8 +230,8 @@ export const en: Dictionary = {
     },
   },
 
-  karvoAi: {
-    eyebrow: "Karvo AI",
+  arkhaAi: {
+    eyebrow: "Arkha AI",
     headline: "Enterprise transformation reveals tomorrow’s opportunities.",
     body: [
       "We work alongside enterprises and SMEs to pinpoint exactly where artificial intelligence can transform their operations, products, and business models.",
@@ -246,7 +246,7 @@ export const en: Dictionary = {
       { name: "New company", desc: "Engineering and spinning out a standalone software venture." },
     ],
     note: "We implement solutions to real friction and, when a problem repeats across companies, we turn it into an independent company.",
-    cta: "Explore Karvo AI",
+    cta: "Explore Arkha AI",
   },
 
   solutions: {
@@ -360,11 +360,11 @@ export const en: Dictionary = {
 
   ventures: {
     eyebrow: "Ventures",
-    headline: "Companies built by Karvo.",
+    headline: "Companies built by Arkha.",
     subtitle:
       "We only show genuine initiatives and companies under active development.",
-    cta: "Build with Karvo",
-    carouselLabel: "Companies built by Karvo",
+    cta: "Build with Arkha",
+    carouselLabel: "Companies built by Arkha",
     slideLabel: "{current} of {total}",
     items: [
       {
@@ -416,7 +416,7 @@ export const en: Dictionary = {
     headline: "Born in Latin America. Built for the world.",
     body: [
       "Latin America is full of massive problems, underserved markets, and extraordinary talent.",
-      "Karvo aims to build companies from here that compete on the global stage.",
+      "Arkha aims to build companies from here that compete on the global stage.",
     ],
     visionNote:
       "Mexico is our launchpad. Latin America is our market. The world is our ambition.",
@@ -429,14 +429,14 @@ export const en: Dictionary = {
       { name: "Peru", role: "Expanding economy & agile digital adoption", tag: "Target market", core: false },
     ],
     disclaimer:
-      "Karvo operates from Mexico and engages with talent and markets across the region. We do not claim a physical presence where operating entities have not yet been established.",
+      "Arkha operates from Mexico and engages with talent and markets across the region. We do not claim a physical presence where operating entities have not yet been established.",
   },
 
   tijuana: {
     eyebrow: "Tijuana",
     headline: "Born in Tijuana. Connected with the world.",
     body: [
-      "Karvo is born in Tijuana, a vibrant city on the border between Mexico and the United States.",
+      "Arkha is born in Tijuana, a vibrant city on the border between Mexico and the United States.",
       "From here, we build companies capable of growing first in Mexico, expanding across Latin America, and ultimately competing globally.",
     ],
     visionTag: "Cross-border corridor vision · Zona Río",
@@ -464,7 +464,7 @@ export const en: Dictionary = {
   network: {
     eyebrow: "Network",
     headline: "Great companies are built by great people.",
-    body: "Building a company requires far more than capital. Karvo is cultivating a network of individuals capable of building them.",
+    body: "Building a company requires far more than capital. Arkha is cultivating a network of individuals capable of building them.",
     nodes: [
       { name: "Founders", role: "Entrepreneurs obsessed with real problems." },
       { name: "Engineers", role: "Software architects and AI practitioners." },
@@ -487,7 +487,7 @@ export const en: Dictionary = {
       "Initial capital and operational support",
       "Cross-border and global distribution network",
     ],
-    cta: "Apply to Karvo",
+    cta: "Apply to Arkha",
     meta: ["16 questions", "3–5 minutes", "Strictly confidential"],
   },
 
@@ -508,7 +508,7 @@ export const en: Dictionary = {
     eyebrow: "The future starts here",
     headline: "Latin America’s next great company could start here.",
     subheadline: "Let’s build it.",
-    primary: "Build with Karvo",
+    primary: "Build with Arkha",
     secondary: "Diagnose my company",
   },
 
@@ -531,7 +531,7 @@ export const en: Dictionary = {
         links: [
           { label: "Arkha", href: "#ventures" },
           { label: "Validation pipeline", href: "#ventures" },
-          { label: "Karvo AI", href: "#karvo-ai" },
+          { label: "Arkha AI", href: "#arkha-ai" },
         ],
       },
       {
@@ -555,14 +555,14 @@ export const en: Dictionary = {
     requiredHint: "Required",
     error: "We couldn't send the form. Please check your details and try again in a few minutes.",
     founder: {
-      eyebrow: "Karvo Ventures",
+      eyebrow: "Arkha Ventures",
       title: "Founder application",
       subtitle: "We assess technical rigor, problem depth, and execution velocity.",
       groups: [
         "Founder & company",
         "Opportunity & product",
         "Stage, traction & team",
-        "Capital, why Karvo & deck",
+        "Capital, why Arkha & deck",
       ],
       fields: {
         name: { label: "Full name", placeholder: "e.g. Mateo Rivera" },
@@ -598,7 +598,7 @@ export const en: Dictionary = {
           placeholder: "e.g. $150k – $300k to accelerate product and AI",
         },
         whyKarvo: {
-          label: "Why Karvo?",
+          label: "Why Arkha?",
           placeholder: "What do you expect from our studio and technical capacity?",
         },
         pitchDeck: {
@@ -620,8 +620,8 @@ export const en: Dictionary = {
       confidentiality: "Strictly confidential",
     },
     diagnostic: {
-      eyebrow: "Karvo AI",
-      title: "Karvo AI diagnostic",
+      eyebrow: "Arkha AI",
+      title: "Arkha AI diagnostic",
       subtitle:
         "Let us uncover where AI can automate critical bottlenecks and unlock new commercial opportunities for your company.",
       fields: {
@@ -641,7 +641,7 @@ export const en: Dictionary = {
       confidentiality: "Confidentiality guaranteed",
     },
     arkha: {
-      eyebrow: "Venture 01 · Karvo Studio",
+      eyebrow: "Venture 01 · Arkha Studio",
       title: "Arkha",
       subtitle: "AI × Blockchain × Financial infrastructure",
       statusLabel: "Status",
@@ -653,7 +653,7 @@ export const en: Dictionary = {
         { label: "Technical focus", value: "Cross-border settlement rails and programmable contracts." },
         { label: "Main corridor", value: "B2B trade between Mexico, the United States, and Latin America." },
       ],
-      footnote: "Under active development at Karvo Studio",
+      footnote: "Under active development at Arkha Studio",
     },
   },
 

@@ -1,7 +1,7 @@
 {
-  "name": "karvo",
+  "name": "arkha",
   "version": "1.0.0",
-  "description": "Landing de Karvo Venture Studio",
+  "description": "Landing de Arkha Venture Studio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

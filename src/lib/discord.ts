@@ -15,7 +15,7 @@ const SUMMARY: Record<LeadKind, { title: string; fields: string[]; long: string 
     long: "whatBuilding",
   },
   diagnostic: {
-    title: "Nueva solicitud de diagnóstico Karvo AI",
+    title: "Nueva solicitud de diagnóstico Arkha AI",
     fields: ["company", "contact", "email", "industry"],
     long: "challenge",
   },

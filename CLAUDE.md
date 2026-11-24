@@ -1,10 +1,10 @@
 @AGENTS.md
 
-# Karvo — landing del venture studio
+# Arkha — landing del venture studio
 
 Sitio de una sola página en español e inglés. Referencia visual: highalpha.com.
 
-**Posicionamiento:** Karvo es un venture studio y **también una agencia de software que implementa IA** para empresas. Ningún texto debe negar esa parte (por eso "Qué no somos" ya no incluye "consultora" ni "agencia de IA").
+**Posicionamiento:** Arkha es un venture studio y **también una agencia de software que implementa IA** para empresas. Ningún texto debe negar esa parte (por eso "Qué no somos" ya no incluye "consultora" ni "agencia de IA").
 
 ## Stack
 
@@ -25,12 +25,12 @@ Sitio de una sola página en español e inglés. Referencia visual: highalpha.co
   - Tablas `founder_applications` y `diagnostic_requests`, definidas en `supabase/migrations/` (se aplican en el SQL Editor de Supabase). RLS activo y sin políticas: solo el servidor escribe, con la llave secreta (`src/lib/supabase.ts`, protegido con `server-only`).
   - La etapa del founder se guarda siempre en español para poder filtrar sin importar el idioma del formulario.
   - Variables `SUPABASE_URL`, `SUPABASE_SECRET_KEY` y `DISCORD_WEBHOOK_URL` (ver `.env.example`). Ninguna lleva `NEXT_PUBLIC_`: son secretas.
-- **Soluciones (agencia).** `src/components/sections/Solutions.tsx`, después de Karvo AI (`#soluciones`): introducción con una automatización de ejemplo (ventana con cuatro pasos y un pulso CSS `animate-flow-dot`), seis servicios (`#servicios`, cada uno con una `key` que elige su ícono), "Cómo trabajamos" y un cierre en tarjeta azul. Texto en `solutions` del diccionario. Sus CTA abren el modal `diagnostic` (formulario para empresas). El hero tiene una cuarta tarjeta (`solutions`, glifo `</>` en `CardGlyph`) y hay enlace en navbar, footer y la tarjeta "Empresas".
+- **Soluciones (agencia).** `src/components/sections/Solutions.tsx`, después de Arkha AI (`#soluciones`): introducción con una automatización de ejemplo (ventana con cuatro pasos y un pulso CSS `animate-flow-dot`), seis servicios (`#servicios`, cada uno con una `key` que elige su ícono), "Cómo trabajamos" y un cierre en tarjeta azul. Texto en `solutions` del diccionario. Sus CTA abren el modal `diagnostic` (formulario para empresas). El hero tiene una cuarta tarjeta (`solutions`, glifo `</>` en `CardGlyph`) y hay enlace en navbar, footer y la tarjeta "Empresas".
 - **Ventures.** `src/components/sections/ventures/`: el carrusel (cliente) solo cambia de slide; los mosaicos (`tiles.tsx`) se dibujan en el servidor con HTML/SVG y unidades `cqw`. Para usar fotos o capturas reales, reemplaza el mosaico por un `<Image>`.
 
 ## Design system
 
-- Colores: `canvas #f6f6f6`, `surface #fff`, `ink #171717`, `ink-soft` / `ink-muted` (76 % / 60 %), `line #cecece`, `graphite` (bordes sobre oscuro), `accent #0052FF` (azul Karvo), `danger #c4320a` (errores de formulario).
+- Colores: `canvas #f6f6f6`, `surface #fff`, `ink #171717`, `ink-soft` / `ink-muted` (76 % / 60 %), `line #cecece`, `graphite` (bordes sobre oscuro), `accent #0052FF` (azul Arkha), `danger #c4320a` (errores de formulario).
 - Tipografía fluida: `text-display`, `text-h2…h4`, `text-p-xl…p-sm`, `text-eyebrow`. Titulares en peso 400 y en oración, no en MAYÚSCULAS.
 - Radio `rounded-card` (6px) y botones píldora.
 - Primitivas en `src/components/ui/`: `Section`, `Container`, `Button`, `Tag`, `Eyebrow`, `Icons`, `Logo`. Encabezado estándar de sección: `sections/SectionHeader.tsx`.

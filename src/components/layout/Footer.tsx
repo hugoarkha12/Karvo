@@ -1,7 +1,7 @@
 import type { Dictionary } from "@/i18n/dictionaries/es";
 import type { Locale } from "@/i18n/config";
 import { Container } from "@/components/ui/Container";
-import { KarvoLogo } from "@/components/ui/Logo";
+import { ArkhaLogo } from "@/components/ui/Logo";
 import { ModalTrigger } from "@/components/modals/ModalTrigger";
 import { LanguageSwitch } from "./LanguageSwitch";
 
@@ -22,7 +22,7 @@ export function Footer({
         <div className="grid gap-14 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <a href="#top" aria-label={common.home} className="text-[1.5rem]">
-              <KarvoLogo />
+              <ArkhaLogo />
             </a>
             <p className="mt-8 max-w-sm text-p-xl">{copy.tagline}</p>
             <p className="mt-4 text-p-sm text-on-dark-soft">{copy.location}</p>
@@ -63,7 +63,7 @@ export function Footer({
 
         <div className="mt-16 flex flex-col gap-5 border-t border-white/25 pt-6 text-[0.9375rem] text-on-dark-soft sm:mt-24 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {year} Karvo Venture Studio. {copy.rights}
+            © {year} Arkha Venture Studio. {copy.rights}
           </p>
           <div className="flex items-center gap-8">
             <LanguageSwitch current={locale} label={common.language} tone="light" />

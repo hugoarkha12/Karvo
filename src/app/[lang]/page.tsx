@@ -8,7 +8,7 @@ import { Thesis } from "@/components/sections/Thesis";
 import { Method } from "@/components/sections/Method";
 import { ArtificialIntelligence } from "@/components/sections/ArtificialIntelligence";
 import { Models } from "@/components/sections/Models";
-import { KarvoAI } from "@/components/sections/KarvoAI";
+import { ArkhaAI } from "@/components/sections/ArkhaAI";
 import { Solutions } from "@/components/sections/Solutions";
 import { Ventures } from "@/components/sections/ventures/Ventures";
 import { Latam } from "@/components/sections/Latam";
@@ -37,7 +37,7 @@ export default async function HomePage() {
         <Method copy={dict.method} />
         <ArtificialIntelligence copy={dict.ai} />
         <Models copy={dict.models} />
-        <KarvoAI copy={dict.karvoAi} />
+        <ArkhaAI copy={dict.arkhaAi} />
         <Solutions copy={dict.solutions} />
         <Ventures copy={dict.ventures} common={dict.common} />
         <Latam copy={dict.latam} />

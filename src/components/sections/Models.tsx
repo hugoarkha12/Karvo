@@ -78,7 +78,7 @@ export function Models({ copy }: { copy: Dictionary["models"] }) {
           }
         />
         <ModelCard
-          id="karvo-ventures"
+          id="arkha-ventures"
           tone="dark"
           copy={copy.ventures}
           action={<ModalTrigger modal="founder">{copy.ventures.cta}</ModalTrigger>}

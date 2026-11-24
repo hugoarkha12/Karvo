@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import type { Dictionary } from "@/i18n/dictionaries/es";
 import type { Locale } from "@/i18n/config";
 import { cn } from "@/lib/utils";
-import { KarvoLogo } from "@/components/ui/Logo";
+import { ArkhaLogo } from "@/components/ui/Logo";
 import { ModalTrigger } from "@/components/modals/ModalTrigger";
 import { LanguageSwitch } from "./LanguageSwitch";
 
@@ -37,7 +37,7 @@ export function Navbar({
     <header className="sticky top-0 z-40 bg-canvas px-gutter">
       <div className="mx-auto flex h-(--nav-h) w-full max-w-site items-center justify-between gap-8">
         <a href="#top" aria-label={common.home} onClick={close} className="text-[1.25rem] text-ink lg:text-[1.375rem]">
-          <KarvoLogo />
+          <ArkhaLogo />
         </a>
 
         <nav aria-label="Principal" className="hidden items-center gap-6 lg:flex xl:gap-10">

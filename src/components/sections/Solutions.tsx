@@ -36,7 +36,7 @@ const AI_STEP = 1;
 
 /**
  * Soluciones tecnológicas para empresas (la parte de agencia de software e IA
- * de Karvo): introducción con una automatización de ejemplo, los seis
+ * de Arkha): introducción con una automatización de ejemplo, los seis
  * servicios, cómo trabajamos y un cierre. Los CTA abren el diagnóstico de
  * empresas (modal "diagnostic"), el mismo formulario de la tarjeta "Empresas".
  */
