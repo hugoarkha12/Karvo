@@ -2,7 +2,7 @@ import type { Dictionary } from "./es";
 
 export const en: Dictionary = {
   meta: {
-    title: "Arkha — Building the companies of the future",
+    title: "Arkha: Building the companies of the future",
     description:
       "Arkha is a venture studio that uses artificial intelligence, technology, capital and talent to discover opportunities and build high-potential companies in Latin America. We also build software and implement AI for businesses.",
     ogDescription:

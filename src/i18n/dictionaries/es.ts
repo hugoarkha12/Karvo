@@ -4,7 +4,7 @@
 
 export const es = {
   meta: {
-    title: "Arkha — Construimos las empresas del futuro",
+    title: "Arkha: Construimos las empresas del futuro",
     description:
       "Arkha es un venture studio que utiliza inteligencia artificial, tecnología, capital y talento para descubrir oportunidades y construir compañías de alto potencial en Latinoamérica. También desarrollamos software e implementamos IA para empresas.",
     ogDescription:
